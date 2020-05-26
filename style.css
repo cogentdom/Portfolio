@@ -1,10 +1,11 @@
 body {
   font-family: Roboto, sans-serif;
-  background-image: url('https://s3.amazonaws.com/codecademy-content/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
+  background-image: url('./image_files/backdrop.png');
 }
 
 header {
   padding: 20px 0;
+  background-color: darkgrey;
 }
 
 header .row,
@@ -31,7 +32,7 @@ a {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('https://s3.amazonaws.com/codecademy-content/projects/personal_portfolio/background.jpeg');
+  background-image: url('./image_files/foggy_forest.jpg');
   background-size: cover;
   color: #ffffff;
   height: 400px;
@@ -49,10 +50,11 @@ a {
   color: #fff;
 }
 
-section .row img {
-  margin: 0 0 30px;
-  width: 100%;
+.headshot {
+  transform: rotate(90deg);
+  width: 100px;
 }
+
 
 .col-md-6 {
   margin: 0 0 30px;
@@ -98,6 +100,10 @@ footer {
 footer .col-sm-8 {
   display: flex;
   justify-content: flex-end;
+}
+
+footer img {
+  width: 40px;
 }
 
 footer ul {
