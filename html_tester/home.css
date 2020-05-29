@@ -1,0 +1,69 @@
+
+#icons {
+    position: fixed;
+    width: 14%;
+    top: 30%;
+    text-align: center;
+    /* left: 0vw; */
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /* background-color: khaki; */
+    margin-left: 1%;
+  }
+
+  #icons .row {
+    margin-bottom: 10%;
+  }
+
+  #icons .row #headshot {
+    /* display: inline; */
+    text-decoration: underline;
+    text-align: center;
+    transform: rotate(90deg);
+    font-size: 30%;
+    width: 60%;
+    height : auto;
+    align-items: baseline;
+    left: 0;
+    /* padding-inline-end: 10%; */
+  }
+
+  #icons p {
+    font-size: 60%;
+    text-align: left;
+    padding-top: 10%;
+    margin-top: 10%;
+  }
+
+  #icons a {
+    display: block;
+    text-align: left;
+    
+    /* left: 0; */
+    height: auto;
+    width: auto;
+    /* margin-top: 10%; */
+    /* padding: 100px; */
+    transition: all 0.3s ease;
+    color: white;
+    /* font-size: 20px; */
+}
+
+#icons a:hover {
+    transform: scale(1);
+    position: relative;
+    margin-left: 20%;
+    -webkit-transition: margin-left transform 1000ms linear;
+    -moz-transition: margin-left transform 1000ms linear;
+    -o-transition: margin-left transform 1000ms linear;
+    -ms-transition: margin-left transform 1000ms linear;
+    transition: margin-left transform 1000ms linear;
+  }
+
+
+
+  #icons img{
+    width: 20%;
+    height: 20%;
+  }
