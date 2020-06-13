@@ -1,0 +1,10 @@
+
+#jumbo_img {
+  display: flex;
+  align-items: center;
+  /*text-align: left;*/
+  background-image: url('./image_files/fungi.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 100vh;
+}
