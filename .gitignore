@@ -5,6 +5,7 @@
 
 # Added my domhuff
 .DS_Store
+.idea
 
 # User-specific files
 *.rsuser
