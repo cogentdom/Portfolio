@@ -27,28 +27,34 @@ h1 {
 .jumbotron {
   display: flex;
   align-items: center;
+  /*text-align: left;*/
   background-image: url('./image_files/foggy_forest.jpg');
   background-size: cover;
   color: #ffffff;
   height: 100vh;
+
 }
 
 .jumbotron container {
   height: 50vh;
+  margin-left: 15vw;
 }
+
+/*.jumbotron row {*/
+/*  margin-left: 15%;*/
+/*}*/
+
 .jumbotron h2 {
   font-size: 60px;
   font-weight: 700;
-  margin: 0;
   color: #fff;
-  margin-left: 1%;
+  /*margin-left: 15%;*/
   /* left: 40%; */
 }
 
 .jumbotron h3 {
-  margin: 20px 0 20px;
   color: #fff;
-  margin-left: 1%;
+  /*margin-left: 15%;*/
 }
 
 
