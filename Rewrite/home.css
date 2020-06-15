@@ -1,0 +1,14 @@
+header {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: dimgrey;
+}
+
+h1 {
+    text-align: left;
+}
+
+a {
+    text-align: right;
+}

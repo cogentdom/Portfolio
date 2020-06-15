@@ -37,7 +37,7 @@ h1 {
 
 .jumbotron container {
   height: 50vh;
-  margin-left: 15vw;
+  /*margin-left: 25wv;*/
 }
 
 /*.jumbotron row {*/
@@ -45,16 +45,16 @@ h1 {
 /*}*/
 
 .jumbotron h2 {
-  font-size: 60px;
+  font-size: 100%;
   font-weight: 700;
   color: #fff;
-  /*margin-left: 15%;*/
+  margin-left: 10%;
   /* left: 40%; */
 }
 
 .jumbotron h3 {
   color: #fff;
-  /*margin-left: 15%;*/
+  margin-left: 10%;
 }
 
 
