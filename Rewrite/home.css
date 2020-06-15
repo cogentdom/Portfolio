@@ -1,14 +1,55 @@
-header {
-    width: 100vw;
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+}
+
+.header {
+
+    height: 10vh;
     background-color: dimgrey;
+    display: grid;
+    grid-template-columns: 70% 1fr;
 }
 
-h1 {
+.title {
     text-align: left;
+
+
 }
 
-a {
-    text-align: right;
+.title h1 {
+    margin-left: 5%;
+}
+
+.navbar {
+    height: 100%;
+    display: grid;
+    text-align: center;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.a {background-color: aliceblue}
+.b {background-color: bisque}
+
+.headerArt {
+      display: flex;
+  align-items: center;
+  /*text-align: left;*/
+  background-image: url('../image_files/foggy_forest.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 100vh;
+}
+
+.intro {
+    background-color: dimgrey;
+    height: 80vh;
+}
+
+footer {
+    height: 10vh;
+    background-color: cadetblue;
 }
