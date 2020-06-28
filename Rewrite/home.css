@@ -37,6 +37,7 @@
 .headerArt {
   display: flex;
   align-items: center;
+  /* text-align: center; */
   /*text-align: left;*/
   background-image: url('../image_files/foggy_forest.jpg');
   background-size: cover;
@@ -44,6 +45,13 @@
   height: 100vh;
 }
 
+.headerArt h1 {
+    margin-left: 15%;
+    font-size: 400%;
+    font-weight: 700;
+    margin-top: -15%;
+    /* text-indent: 15%; */
+}
 /* .body {
     align-items: baseline;
 } */
