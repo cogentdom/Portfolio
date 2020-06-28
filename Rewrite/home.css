@@ -35,7 +35,7 @@
 .b {background-color: bisque}
 
 .headerArt {
-    display: flex;
+  display: flex;
   align-items: center;
   /*text-align: left;*/
   background-image: url('../image_files/foggy_forest.jpg');
@@ -44,11 +44,19 @@
   height: 100vh;
 }
 
+/* .body {
+    align-items: baseline;
+} */
 
 #icons {
-    position: fixed;
+    /* position: -webkit-sticky; Required for Safari */
+    display: inline;
+    position: sticky;
+    /* height: 100%; */
+    background: transparent;
     width: 14%;
     top: 30%;
+    left: 0;
     text-align: center;
     /* left: 0vw; */
     -webkit-transform: translateY(-50%);
@@ -56,6 +64,7 @@
     transform: translateY(-50%);
     /* background-color: khaki; */
     margin-left: 1%;
+    margin-top: 20vh;
   }
 
   #icons .row {
@@ -67,9 +76,8 @@
   #icons h4 {
     /* display: inline; */
     text-decoration: underline;
-    text-align: center;
-    margin-left: 10%;
-    
+    text-align: left;
+    /* margin-left: 10%; */
   }
 
   #icons p {
@@ -124,7 +132,7 @@
 
 .intro {
     background-color: dimgrey;
-    height: 80vh;
+    height: 180vh;
 }
 
 footer {
