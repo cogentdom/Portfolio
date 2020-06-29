@@ -3,18 +3,25 @@
     padding: 0;
 }
 /*
- *************
- * Header 
- *************
+***************************************************
+*       HEADER
+***************************************************
 */
  .header {
-
+    display: flex;
+    align-items: center;
     height: 10vh;
     background-color: dimgrey;
     display: grid;
-    grid-template-columns: 70% 1fr;
+    grid-template-columns: 65% 1fr 10%;
+
 }
 
+/*
+ *************
+ * Title Bar 
+ *************
+*/
 .title {
     text-align: left;
 
@@ -22,9 +29,15 @@
 }
 
 .title h1 {
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
+
+/*
+ *************
+ * Page Navigation Bar 
+ *************
+*/
 .navbar {
     height: 100%;
     display: grid;
@@ -35,9 +48,14 @@
 
 }
 
-.a {background-color: aliceblue}
-.b {background-color: bisque}
+/* .a {background-color: aliceblue}
+.b {background-color: bisque} */
 
+/*
+***************************************************
+*       BODY
+***************************************************
+*/
 
 /*
  *************
@@ -51,8 +69,8 @@
     /* height: 100%; */
     background: transparent;
     width: 14%;
-    top: 45%;
-    left: 0;
+    top: 10%;
+    left: 10%;
     text-align: center;
     /* left: 0vw; */
     -webkit-transform: translateY(-50%);
@@ -123,3 +141,19 @@
     height: 20%;
     padding-top: 1.5%;
   }
+
+/*
+***************************************************
+*       FOOTER
+***************************************************
+*/
+  footer {
+    display: flex;
+    height: 6vh;
+    background-color: cadetblue;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 10%
+}
