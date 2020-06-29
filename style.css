@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    color: #eaeaea;
 }
 /*
 ***************************************************
@@ -11,7 +12,7 @@
     display: flex;
     align-items: center;
     height: 10vh;
-    background-color: dimgrey;
+    background-color: #252a34;
     display: grid;
     grid-template-columns: 65% 1fr 10%;
 
@@ -61,6 +62,106 @@
 *       BODY
 ***************************************************
 */
+/*
+ *************
+ * Intro Photo Art
+ *************
+*/
+.headerArt {
+  display: flex;
+  align-items: center;
+  
+  text-align: right;
+  /*text-align: left;*/
+  background-image: url('image_files/foggy_forest.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 47% 1fr 1fr 43%;
+}
+
+.headerArt h1 {
+    margin-right: 45%;
+    font-size: 400%;
+    font-weight: 700;
+    margin-top: -15%;
+    /* opacity: 0.9; */
+    /* text-indent: 15%; */
+    text-decoration: underline;
+}
+
+.headerArt p {
+  display: inline;
+  margin-right: 45%;
+  /* right: 30%; */
+  font-size: 150%;
+  opacity: 0.5;
+  /* font-weight: 700; */
+  margin-top: -15%;
+  /* text-indent: 15%; */
+  /* text-decoration: underline; */
+}
+
+
+/*
+ *************
+ * Text Field
+ *************
+*/
+.textfield {
+  /* display: inline-block; */
+  background-color: #252a34;
+  height: 110vh;
+  
+  padding-top: 5vh;
+
+  align-items: center;
+  /* text-align: center; */
+}
+
+.textfield h3 {
+  /* padding-top: 5vh; */
+  margin-left: 30%;
+  right: 35%;
+  font-weight: bolder;
+  /* color: #929292; */
+  border-bottom:0.2vh solid #750303;
+  /* border-bottom-style: 10; */
+  /* border-width: 10%; */
+  width: 35%;
+  padding-bottom: 1vh;
+  font-size: x-large;
+}
+
+.textfield h5 {
+  /* padding-top: 5vh; */
+  margin-left: 30%;
+  right: 35%;
+  /* padding-bottom: 3vh; */
+  font-size: large;
+  border-bottom:0.2vh solid #484a41;
+  width: 17.5%;
+  font-style: italic;
+}
+
+.textfield p {
+  margin-left: 30%;
+  padding-right: 35%;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  font-size: normal;
+  color: #e2e2e2;
+  font-weight: lighter;
+}
+
+.textfield ul {
+  margin-left: 33%;
+  padding-right: 35%;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  font-size: medium;
+}
 
 /*
  *************
@@ -84,6 +185,7 @@
     /* background-color: khaki; */
     margin-left: 1%;
     margin-top: 20vh;
+    opacity: 0.7;
   }
 
   #icons .row {
@@ -148,6 +250,8 @@
     padding-top: 1.5%;
   }
 
+
+  
 /*
 ***************************************************
 *       FOOTER
