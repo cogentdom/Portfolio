@@ -132,6 +132,27 @@
 
 /*
  *************
+ * Images 
+ *************
+*/
+.reg_anyl {
+  display: grid;
+  grid-template-columns: 1fr 50% 35%;
+}
+
+.regression_text {
+  width: 70%;
+  /* padding-left: -30%; */
+  /* left: 0%; */
+}
+
+.regression_img {
+  width: 100%;
+  /* right: 0%; */
+  /* margin-left: 65%; */
+}
+/*
+ *************
  * Social Handles 
  *************
 */
