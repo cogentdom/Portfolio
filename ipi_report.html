@@ -9,7 +9,7 @@
 <body>
     <div class="header">
         <div class="title">
-            <h1>Idaho Policy Institute Report</h1>
+            <h1>Porting Data  | |  Idaho Policy Institute Report</h1>
         </div>
         <div>
             <nav class="navbar">            
@@ -18,17 +18,6 @@
             </nav>
         </div>
     </div>
-
-
-
-    <section>
-        <div class="headerArt">
-            <h3></h3>
-            <h1>Porting Data</h1>
-            <p>Decisions Driven by Data</p>
-            <h3></h3>
-        </div>
-    </section>
 
 
     
@@ -52,6 +41,7 @@
         </div>
 
         <div id="textfield_ipi" class="textfield">
+            <!-- Introduction -->
             <h3>Meeting the Client:</h3>
             <p>Idaho Policy Institute</p>
             <h5>Objective of the Project</h5>
@@ -62,12 +52,45 @@
                 <li>how did they collect this data</li>
                 
             </ul>
+            <!-- The Data Itself and Early Stage Preparation -->
             <h5>Data Manual</h5>
-            <p></p>
-            <h3>Exploring & Modeling of Municipial Dataset:</h3>
-            <p>This is a project presented to my partners and me by our client, The Idaho Policy Institute, In which they provided a dataset containing information on finances, population and crime for virtually every city and/or county in Idaho. The goal of the project was to find relationships between financial decisions with crime and employment trends in cities of Idaho with efferent sizes.</p>
+            <h5>Data Sources</h5>
+            <p>We felt this dataset was useful relevant information e.g. employment and business statistics. After importing we merged these tables with the one provided by IPI, or in one case made an additional table. Listed below are all additional sources.</p>
+            <ul>
+                <li>U.S. Census Bureau (USC)</li>
+                    <p class="list_item">Provides population measurments at various entity levels including state, county and city</p>
+                <li>Willamette Government Finance Database (GFD)</li>
+                    <p class="list_item">Provides goverment cash flow information for each city/county in Idaho</p>
+                <li>Federal Bureau of Investigation (FBI) </li>
+                    <p class="list_item">Describes various crime variables</p>
+                <li>Bureau of Labor Statistics (BLS) </li>
+                    <p class="list_item">Allows for adjustment for inflation and provides employment related statistics</p>
+            </ul>
+
             <h3>Functions We Created:</h3>
             <p>We created many functions and methods to augment our work such as converting to real dollars using the current year as a parameter. We also did this to regularize some of our variables. Furthermore there are many plotting functions such as heat maps, matricies of distributions and scatter plots, choropleth maps , etc. These methods and functions are all stored within the support folder and have their own documentation. These were hidden for aesthetics and need not be read to understand the process of this notebook.</p>
+  
+            <!-- Data Exploration -->
+
+            <h3>Exploring & Modeling of Municipial Dataset:</h3>
+            <p>This is a project presented to my partners and me by our client, The Idaho Policy Institute, In which they provided a dataset containing information on finances, population and crime for virtually every city and/or county in Idaho. The goal of the project was to find relationships between financial decisions with crime and employment trends in cities of Idaho with efferent sizes.</p>
+            
+            <h3> Objectives for our Models</h3>
+            <p>The amount of columns contained within the set describing crime amounted to 7 however there were over 500 variables describing financial revenue or expenditure. Using this knowledge we thought it best to attempt to describe crime using financial information as our independent variables (along with additional information). We chose to do this so that we would not limit the features available for our models along with the ability of this type of model to provide a good description of the relation between government finances and crime. The variables describing crime were quantities of occurances so to use this as our dependent variable we needed to construct a regression model.
+                A future iteration of this project one might create a classifier that describes whether an increase or decrease in a feature will result in an increase or decease in crime. We do not address this effect of each feature directly to our dependent as to avoid feature phishing.</p>
+            <h5>Selecting a Model</h5>
+            <p>Since this a panel dataset we wanted to account for the serial correlation resulting from the time series. Additionally we thought a linear model the easiest to interpret and understand the inner workings of the data itself. This lead us to a time effects model for our initial build, however the world is not linear and features will likely contain heteroskedasticity so past comprehension a non-linear approach will likely be a more robust and accurate model.</p>
+
+            <!-- Data Cleansing and Interpolation -->
+
+            <!-- Constructiong Models -->
+
+            <!-- Analysis of Regression -->
+
+            <!-- Identify Davids (linkedin) 4 features for having made an impact-->
+
+            <!-- Conclusions and what to do from here-->
+            
         </div>
     </section>
 

@@ -12,6 +12,46 @@
 *       BODY
 ***************************************************
 */
+/*
+ *************
+ * Intro Photo Art
+ *************
+*/
+.headerArt {
+  display: flex;
+  align-items: center;
+  
+  text-align: right;
+  /*text-align: left;*/
+  background-image: url('image_files/foggy_forest.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 47% 1fr 1fr 43%;
+}
+
+.headerArt h1 {
+    margin-right: 45%;
+    font-size: 400%;
+    font-weight: 700;
+    margin-top: -15%;
+    /* opacity: 0.9; */
+    /* text-indent: 15%; */
+    text-decoration: underline;
+}
+
+.headerArt p {
+  display: inline;
+  margin-right: 45%;
+  /* right: 30%; */
+  font-size: 150%;
+  opacity: 0.5;
+  /* font-weight: 700; */
+  margin-top: -15%;
+  /* text-indent: 15%; */
+  /* text-decoration: underline; */
+}
 
 
 .body {

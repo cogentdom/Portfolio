@@ -1,11 +1,4 @@
-
-
-#jumbo_img {
-  display: flex;
-  align-items: center;
-  /*text-align: left;*/
-  background-image: url('image_files/fire_poi.jpg');
-  background-size: cover;
-  color: #ffffff;
-  height: 100vh;
+* {
+  padding: 0;
+  margin: 0;
 }
