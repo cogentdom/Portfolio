@@ -24,12 +24,17 @@
 */
 .title {
     text-align: left;
-
+    
 
 }
 
 .title h1 {
     margin-left: 10%;
+    border: 0.1vw solid black;
+    width:fit-content; 
+    width:-webkit-fit-content; 
+    width:-moz-fit-content;
+    padding: 0.2vw;
 }
 
 
@@ -69,7 +74,7 @@
     /* height: 100%; */
     background: transparent;
     width: 14%;
-    top: 10%;
+    top: 11%;
     left: 10%;
     text-align: center;
     /* left: 0vw; */
@@ -91,7 +96,8 @@
     /* display: inline; */
     text-decoration: underline;
     text-align: left;
-    /* margin-left: 10%; */
+    margin-bottom: -5%;
+    margin-top: -5%;
   }
 
   #icons p {
