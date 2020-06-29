@@ -80,7 +80,18 @@
                 A future iteration of this project one might create a classifier that describes whether an increase or decrease in a feature will result in an increase or decease in crime. We do not address this effect of each feature directly to our dependent as to avoid feature phishing.</p>
             <h5>Selecting a Model</h5>
             <p>Since this a panel dataset we wanted to account for the serial correlation resulting from the time series. Additionally we thought a linear model the easiest to interpret and understand the inner workings of the data itself. This lead us to a time effects model for our initial build, however the world is not linear and features will likely contain heteroskedasticity so past comprehension a non-linear approach will likely be a more robust and accurate model.</p>
-
+            
+            <h3>What is OLS and it's Assumptions</h3>
+            <ul>
+                <li>Error has a Conditional Mean Zero</li>
+                    <p class="list_item">Provides population measurments at various entity levels including state, county and city</p>
+                <li>Features are identically independently distributed</li>
+                    <p class="list_item">Provides goverment cash flow information for each city/county in Idaho</p>
+                <li>No Perfect MultiCollinearity</li>
+                    <p class="list_item">Describes various crime variables</p>
+                <li>Large Outliers are Unlikely</li>
+                    <p class="list_item">Nonzero finite fourth moments</p>
+            </ul>
             <!-- Data Cleansing and Interpolation -->
             <h3>Preprossesing</h3>
 
@@ -91,6 +102,7 @@
             <p></p>
             <!-- Constructing Models -->
             <h3>Solving for some Hyperparameters</h3>
+            <h3>Safegaurding against Omitted Variable Bias</h3>
             <h5>Lasso</h5>
             <p></p>
 
@@ -101,27 +113,35 @@
             <p></p>
 
             <!-- Analysis of Regression -->
-            <h3>Analysis of the Model's Results</h3>
-            <h5>Time Effects Regression (OLS)</h5>
+            <h3>OLS Time Effects Regression Model</h3>
+            <h5>Summarizing Results</h5>
             
             <div class="reg_anyl">
                 <div></div>
-            <p class="regression_text">
+                <p class="regression_text">
 
-                This model appears to be a good representation of the data. From this we can see that Population, Total_CashSecurities, Nonin_Trust_CashSec, Total_Expenditure, ect. all are largly statistically significant in identifying Total Theft
-                
-                Population and Total Expenditure seem to be accurate in describing Total Theft with low standard errors. This makes logical sense in that the more people in an area the more crime. Oth_Nonin_Fd_CashSec, Tot_Chgs_and_Misc_Rev and Nonin_TrustCashSec also have low std. errors.
-                
-                Our final P-value appears to be statistically significant so lets use our test data to see how it performs with unseen data.
+                    This model appears to be a good representation of the data. From this we can see that Population, Total_CashSecurities, Nonin_Trust_CashSec, Total_Expenditure, ect. all are largly statistically significant in identifying Total Theft
+                    
+                    Population and Total Expenditure seem to be accurate in describing Total Theft with low standard errors. This makes logical sense in that the more people in an area the more crime. Oth_Nonin_Fd_CashSec, Tot_Chgs_and_Misc_Rev and Nonin_TrustCashSec also have low std. errors.
+                    
+                    Our final P-value appears to be statistically significant so lets use our test data to see how it performs with unseen data.
                 </p>
-            
-            <img class="regression_img" src="image_files/regression_a.png">
+                
+                <img class="regression_img" src="image_files/regression_b.png">
             </div>
             
+            <h5>Identifying the Correlation</h5>
+
+            <div class="reg_anyl">
+                <div></div>
+                <p class="regression_text">Nice correlation but lets avoid phishing</p>
+                <img class="regression_img" src="image_files/regression_a.png">
+            </div>
+
             <!-- Identify Davids (linkedin) 4 features for having made an impact-->
             
             <!-- Conclusions and what to do from here-->
-            
+            <h5 >Causal Inference</h5>
         </div>
     </section>
 
