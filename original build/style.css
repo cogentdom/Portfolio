@@ -1,0 +1,83 @@
+body {
+  font-family: Roboto, sans-serif;
+  background-image: url('./image_files/backdrop.png');
+}
+
+header {
+  padding: 20px 0;
+  background-color: darkgrey;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+/* a {
+  padding: 0;
+  margin: 1px;
+} */
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  /*text-align: left;*/
+  background-image: url('./image_files/foggy_forest.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 100vh;
+
+}
+
+.jumbotron container {
+  height: 50vh;
+  /*margin-left: 25wv;*/
+}
+
+/*.jumbotron row {*/
+/*  margin-left: 15%;*/
+/*}*/
+
+.jumbotron h2 {
+  font-size: 100%;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 10%;
+  /* left: 40%; */
+}
+
+.jumbotron h3 {
+  color: #fff;
+  margin-left: 10%;
+}
+
+
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer img {
+  width: 40px;
+}
+
+footer ul {
+  list-style: none;
+}

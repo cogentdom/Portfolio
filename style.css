@@ -1,83 +1,165 @@
-body {
-  font-family: Roboto, sans-serif;
-  background-image: url('./image_files/backdrop.png');
+* {
+    margin: 0;
+    padding: 0;
 }
-
-header {
-  padding: 20px 0;
-  background-color: darkgrey;
-}
-
-header .row,
-footer .row {
-  display: flex;
-  align-items: center;
-}
-
-h1 {
-  font-weight: 700;
-  margin: 0;
-}
-
-/* a {
-  padding: 0;
-  margin: 1px;
-} */
-
-.jumbotron {
-  display: flex;
-  align-items: center;
-  /*text-align: left;*/
-  background-image: url('./image_files/foggy_forest.jpg');
-  background-size: cover;
-  color: #ffffff;
-  height: 100vh;
+/*
+***************************************************
+*       HEADER
+***************************************************
+*/
+ .header {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background-color: dimgrey;
+    display: grid;
+    grid-template-columns: 65% 1fr 10%;
 
 }
 
-.jumbotron container {
-  height: 50vh;
-  /*margin-left: 25wv;*/
+/*
+ *************
+ * Title Bar 
+ *************
+*/
+.title {
+    text-align: left;
+    
+
 }
 
-/*.jumbotron row {*/
-/*  margin-left: 15%;*/
-/*}*/
-
-.jumbotron h2 {
-  font-size: 100%;
-  font-weight: 700;
-  color: #fff;
-  margin-left: 10%;
-  /* left: 40%; */
-}
-
-.jumbotron h3 {
-  color: #fff;
-  margin-left: 10%;
-}
-
-
-
-.col-md-6 {
-  margin: 0 0 30px;
+.title h1 {
+    margin-left: 10%;
+    border: 0.1vw solid black;
+    width:fit-content; 
+    width:-webkit-fit-content; 
+    width:-moz-fit-content;
+    padding: 0.2vw;
 }
 
 
-footer {
-  font-size: 12px;
-  padding: 20px 0;
+/*
+ *************
+ * Page Navigation Bar 
+ *************
+*/
+.navbar {
+    height: 100%;
+    display: grid;
+    text-align: center;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
 }
 
-footer .col-sm-8 {
-  display: flex;
-  justify-content: flex-end;
+/* .a {background-color: aliceblue}
+.b {background-color: bisque} */
+
+/*
+***************************************************
+*       BODY
+***************************************************
+*/
+
+/*
+ *************
+ * Social Handles 
+ *************
+*/
+#icons {
+    /* position: -webkit-sticky; Required for Safari */
+    display: inline;
+    position: sticky;
+    /* height: 100%; */
+    background: transparent;
+    width: 14%;
+    top: 11%;
+    left: 10%;
+    text-align: center;
+    /* left: 0vw; */
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /* background-color: khaki; */
+    margin-left: 1%;
+    margin-top: 20vh;
+  }
+
+  #icons .row {
+    margin-bottom: 10%;
+    width: 100%;
+    /*height: auto;*/
+  }
+
+  #icons h4 {
+    /* display: inline; */
+    text-decoration: underline;
+    text-align: left;
+    margin-bottom: -5%;
+    margin-top: -5%;
+  }
+
+  #icons p {
+    font-size: 60%;
+    text-align: left;
+    /* padding-top: 10%; */
+    /* margin-top: 10%; */
+    margin-left: 10%;
+
+  }
+
+  #icons a {
+    display: block;
+    text-align: left;
+    
+    /* left: 0; */
+    height: auto;
+    width: auto;
+    /* margin-top: 10%; */
+    /* padding: 100px; */
+    transition: all 0.3s ease;
+    color: white;
+    /* font-size: 20px; */
 }
 
-footer img {
-  width: 40px;
+#icons a:hover {
+    transform: scale(1);
+    position: relative;
+    margin-left: 20%;
+    -webkit-transition: margin-left transform 5000ms linear;
+    -moz-transition: margin-left transform 5000ms linear;
+    -o-transition: margin-left transform 5000ms linear;
+    -ms-transition: margin-left transform 5000ms linear;
+    transition: margin-left transform 5000ms linear;
+  }
+
+  #icons .logostyle_b{
+    height: 15%;
+    width: 15%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 2.5%;
+  }
+
+  #icons .logostyle_a{
+    width: 20%;
+    height: 20%;
+    padding-top: 1.5%;
+  }
+
+/*
+***************************************************
+*       FOOTER
+***************************************************
+*/
+  footer {
+    display: flex;
+    height: 6vh;
+    background-color: cadetblue;
+    align-items: center;
 }
 
-footer ul {
-  list-style: none;
+footer p {
+    margin-left: 10%
 }

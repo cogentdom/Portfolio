@@ -11,7 +11,7 @@
   
   text-align: right;
   /*text-align: left;*/
-  background-image: url('../image_files/foggy_forest.jpg');
+  background-image: url('image_files/foggy_forest.jpg');
   background-size: cover;
   color: #ffffff;
   height: 100vh;
