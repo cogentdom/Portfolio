@@ -16,6 +16,7 @@
     display: grid;
     grid-template-columns: 70% 1fr 1fr;
     border-bottom: 0.2 vh solid #484a41;
+    
 }
 
 /*

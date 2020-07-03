@@ -3,6 +3,7 @@
   margin: 0;
 }
 
-#textfield_home {
-  height: 100vh;
+#textfield_about {
+  height: 80vh;
+  border-top:0.2vh solid #484a41
 }
