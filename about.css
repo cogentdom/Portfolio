@@ -4,6 +4,56 @@
 }
 
 #textfield_about {
-  height: 80vh;
+  height: 450vh;
   border-top:0.2vh solid #484a41
 }
+
+#employer {
+  margin-top: -2vh;
+  font-size: 105%;
+  /* margin-left: 32%; */
+  margin-bottom: -4vh;
+  /* padding-bottom: -2vh; */
+}
+
+h2 {  
+  margin-left: 30%;
+  right: 35%;
+  padding-bottom: 1vh;
+  margin-bottom: 2vh;
+  padding-top: 2vh;
+  font-size: x-large;
+  border-bottom:0.2vh solid #750303;
+  width: 35%;
+}
+
+.headshot {
+  display: grid;
+  grid-template-columns: 17.5% 10vw 1fr 35%;
+}
+
+#head_text {
+  margin: 0;
+  margin-left: 1vw;
+}
+
+#head_img {
+  width: 10vw;
+  margin: 0;
+  /* padding-right: 10vw; */
+}
+
+.awards {
+  margin-top: 2vh;
+  display: grid;
+  grid-template-columns: 30% 11vw 15vw 1fr;
+}
+
+.awards p {
+  margin: 0;
+  padding: 0;
+}
+/* img {
+  width: 10%;
+  margin-left: 30%;
+} */

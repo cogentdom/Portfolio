@@ -47,7 +47,7 @@
             <h5>Objective of the Project</h5>
             <p>Find conections between financial spending and crime</p>
             <h3>Understanding the Initial Dataset</h3>
-            <ul>
+            <ul class="list_unsorted">
                 <li>who gave us the data</li>
                 <li>how did they collect this data</li>
                 
@@ -56,15 +56,16 @@
             <h5>Data Manual</h5>
             <h5>Data Sources</h5>
             <p>We felt this dataset was useful relevant information e.g. employment and business statistics. After importing we merged these tables with the one provided by IPI, or in one case made an additional table. Listed below are all additional sources.</p>
-            <ul>
+            <ul class="list_unsorted">
+                <h4>Data Sources</h4>
                 <li>U.S. Census Bureau (USC)</li>
-                    <p class="list_item">Provides population measurments at various entity levels including state, county and city</p>
+                    Provides population measurments at various entity levels including state, county and city
                 <li>Willamette Government Finance Database (GFD)</li>
-                    <p class="list_item">Provides goverment cash flow information for each city/county in Idaho</p>
+                    Provides goverment cash flow information for each city/county in Idaho
                 <li>Federal Bureau of Investigation (FBI) </li>
-                    <p class="list_item">Describes various crime variables</p>
+                    Describes various crime variables
                 <li>Bureau of Labor Statistics (BLS) </li>
-                    <p class="list_item">Allows for adjustment for inflation and provides employment related statistics</p>
+                    Allows for adjustment for inflation and provides employment related statistics
             </ul>
 
             <h3>Functions We Created:</h3>
@@ -82,15 +83,16 @@
             <p>Since this a panel dataset we wanted to account for the serial correlation resulting from the time series. Additionally we thought a linear model the easiest to interpret and understand the inner workings of the data itself. This lead us to a time effects model for our initial build, however the world is not linear and features will likely contain heteroskedasticity so past comprehension a non-linear approach will likely be a more robust and accurate model.</p>
             
             <h3>What is OLS and it's Assumptions</h3>
-            <ul>
+            <ul class="list_unsorted">
+                <h4>Least Squares Assumptions</h4>
                 <li>Error has a Conditional Mean Zero</li>
-                    <p class="list_item">Provides population measurments at various entity levels including state, county and city</p>
+                    <p id="list_item">Provides population measurments at various entity levels including state, county and city</p>
                 <li>Features are identically independently distributed</li>
-                    <p class="list_item">Provides goverment cash flow information for each city/county in Idaho</p>
+                    <p id="list_item">Provides goverment cash flow information for each city/county in Idaho</p>
                 <li>No Perfect MultiCollinearity</li>
-                    <p class="list_item">Describes various crime variables</p>
+                    <p id="list_item">Describes various crime variables</p>
                 <li>Large Outliers are Unlikely</li>
-                    <p class="list_item">Nonzero finite fourth moments</p>
+                    <p id="list_item">Nonzero finite fourth moments</p>
             </ul>
             <!-- Data Cleansing and Interpolation -->
             <h3>Preprossesing</h3>
