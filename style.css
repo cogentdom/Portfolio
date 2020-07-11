@@ -26,20 +26,26 @@
 */
 .title {
     text-align: left;
-    
+    display: flex;
+    /* align-items: ; */
 
 }
 
 .title h1 {
-    margin-left: 10%;
-    /* border: 0.1vw solid black;
-    width:fit-content; 
-    width:-webkit-fit-content; 
-    width:-moz-fit-content; */
-    padding: 0.2vw;
-    left: 15%;
+  margin: 0;
+  /* border: 0.1vw solid black;
+  width:fit-content; 
+  width:-webkit-fit-content; 
+  width:-moz-fit-content; */
+  padding: 0.2vw;
+  left: 15%;
+  margin-left: 10%;
 }
 
+#header_title {
+  opacity: 0.7;
+  margin: 0;
+}
 
 /*
  *************
@@ -66,223 +72,7 @@
 */
 
 
-/*
- *************
- * Text Field
- *************
-*/
-.textfield {
-  /* display: inline-block; */
-  background-color: #252a34;
-  height: 110vh;
-  
-  padding-top: 5vh;
 
-  align-items: center;
-  /* text-align: center; */
-}
-
-.textfield h2 {  
-  margin-left: 30%;
-  right: 35%;
-  padding-bottom: 1vh;
-  margin-bottom: 2vh;
-  padding-top: 2vh;
-  font-size: x-large;
-  border-bottom:0.2vh solid #750303;
-  width: 35%;
-}
-
-.textfield h3 {
-  /* padding-top: 5vh; */
-  margin-left: 30%;
-  right: 35%;
-  font-weight: bolder;
-  /* color: #929292; */
-  border-bottom:0.2vh solid black;
-  /* border-bottom-style: 10; */
-  /* border-width: 10%; */
-  width: 35%;
-  padding-bottom: 1vh;
-  font-size: x-large;
-}
-
-.textfield h5 {
-  /* padding-top: 5vh; */
-  margin-left: 30%;
-  right: 35%;
-  padding-bottom: 1vh;
-  padding-top: 2vh;
-  font-size: large;
-  border-bottom:0.2vh solid #484a41;
-  width: 18.5%;
-  font-style: italic;
-}
-
-
-
-.textfield p {
-  margin-left: 30%;
-  padding-right: 35%;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
-  font-size: normal;
-  color: #e2e2e2;
-  font-weight: lighter;
-}
-
-.list_unsorted {
-  margin-left: 33%;
-  padding-right: 35%;
-  padding-top: 2vh;
-  padding-bottom: 1vh;
-  font-size: normal;
-}
-
-#list_sub {
-  margin-left: 13%;
-  padding-right: 35%;
-  /* padding-top: 0.5vh; */
-  padding-bottom: 0.5vh;
-  font-size: normal;
-}
-.list_unsorted li {
-  padding-bottom: 1vh;
-  padding-top: 1vh;
-  font-style: italic;
-  /* text-decoration: underline; */
-  
-}
-
-#list_sub li {
-  padding-bottom: 0.5vh;
-  padding-top: 0.5vh;
-}
-
-#list_item {
-  width:70%;
-  padding: 0;
-  padding-left: 1vw;
-  margin-left: 1vw;
-  left: 100%;
-}
-
-.textfield h4 {
-  margin-left: -2vw;
-  border-bottom:0.2vh solid #0b1947;
-  width: 80%;
-  padding-bottom: 0.4vh;
-  padding-top: 2vh;
-  margin-bottom: 1vh;
-}
-/*
- *************
- * Images 
- *************
-*/
-.reg_anyl {
-  display: grid;
-  grid-template-columns: 1fr 50% 35%;
-}
-
-.regression_text {
-  width: 70%;
-  /* padding-left: -30%; */
-  /* left: 0%; */
-}
-
-.regression_img {
-  width: 100%;
-  /* right: 0%; */
-  /* margin-left: 65%; */
-}
-/*
- *************
- * Social Handles 
- *************
-*/
-#icons {
-    /* position: -webkit-sticky; Required for Safari */
-    display: inline;
-    position: sticky;
-    /* height: 100%; */
-    background: transparent;
-    width: 14%;
-    top: 11%;
-    left: 10%;
-    text-align: center;
-    /* left: 0vw; */
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    /* background-color: khaki; */
-    margin-left: 1%;
-    margin-top: 20vh;
-    opacity: 0.7;
-  }
-
-  #icons .row {
-    margin-bottom: 10%;
-    width: 100%;
-    /*height: auto;*/
-  }
-
-  #icons h4 {
-    /* display: inline; */
-    /* text-decoration: underline; */
-    text-align: left;
-    margin-bottom: -5%;
-    margin-top: -5%;
-  }
-
-  #icons p {
-    font-size: 60%;
-    text-align: left;
-    /* padding-top: 10%; */
-    /* margin-top: 10%; */
-    margin-left: 10%;
-
-  }
-
-  #icons a {
-    display: block;
-    text-align: left;
-    
-    /* left: 0; */
-    height: auto;
-    width: auto;
-    /* margin-top: 10%; */
-    /* padding: 100px; */
-    transition: all 0.3s ease;
-    
-    /* font-size: 20px; */
-}
-
-#icons a:hover {
-    transform: scale(1);
-    position: relative;
-    margin-left: 20%;
-    -webkit-transition: margin-left transform 5000ms linear;
-    -moz-transition: margin-left transform 5000ms linear;
-    -o-transition: margin-left transform 5000ms linear;
-    -ms-transition: margin-left transform 5000ms linear;
-    transition: margin-left transform 5000ms linear;
-    filter: brightness(2.43);
-  }
-
-  #icons .logostyle_b{
-    height: 15%;
-    width: 15%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    padding-top: 2.5%;
-  }
-
-  #icons .logostyle_a{
-    width: 20%;
-    height: 20%;
-    padding-top: 1.5%;
-  }
 
 
   

@@ -1,0 +1,130 @@
+/*
+ *************
+ * Text Field
+ *************
+*/
+.textfield {
+    /* display: inline-block; */
+    background-color: #252a34;
+    height: 110vh;
+    
+    padding-top: 5vh;
+  
+    align-items: center;
+    /* text-align: center; */
+  }
+  
+  .textfield h2 {  
+    margin-left: 30%;
+    right: 35%;
+    padding-bottom: 1vh;
+    margin-bottom: 2vh;
+    padding-top: 2vh;
+    font-size: x-large;
+    border-bottom:0.2vh solid #750303;
+    width: 35%;
+  }
+  
+  .textfield h3 {
+    /* padding-top: 5vh; */
+    margin-left: 30%;
+    right: 35%;
+    font-weight: bolder;
+    /* color: #929292; */
+    border-bottom:0.2vh solid black;
+    /* border-bottom-style: 10; */
+    /* border-width: 10%; */
+    width: 35%;
+    padding-bottom: 1vh;
+    font-size: x-large;
+  }
+  
+  .textfield h5 {
+    /* padding-top: 5vh; */
+    margin-left: 30%;
+    right: 35%;
+    padding-bottom: 1vh;
+    padding-top: 2vh;
+    font-size: large;
+    border-bottom:0.2vh solid #484a41;
+    width: 18.5%;
+    font-style: italic;
+  }
+  
+  
+  
+  .textfield p {
+    margin-left: 30%;
+    padding-right: 35%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    font-size: normal;
+    color: #e2e2e2;
+    font-weight: lighter;
+  }
+  
+  .list_unsorted {
+    margin-left: 33%;
+    padding-right: 35%;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    font-size: normal;
+  }
+  
+  #list_sub {
+    margin-left: 13%;
+    padding-right: 35%;
+    /* padding-top: 0.5vh; */
+    padding-bottom: 0.5vh;
+    font-size: normal;
+  }
+  .list_unsorted li {
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    font-style: italic;
+    /* text-decoration: underline; */
+    
+  }
+  
+  #list_sub li {
+    padding-bottom: 0.5vh;
+    padding-top: 0.5vh;
+  }
+  
+  #list_item {
+    width:70%;
+    padding: 0;
+    padding-left: 1vw;
+    margin-left: 1vw;
+    left: 100%;
+  }
+  
+  .textfield h4 {
+    margin-left: -2vw;
+    border-bottom:0.2vh solid #0b1947;
+    width: 80%;
+    padding-bottom: 0.4vh;
+    padding-top: 2vh;
+    margin-bottom: 1vh;
+  }
+  /*
+   *************
+   * Images 
+   *************
+  */
+  .reg_anyl {
+    display: grid;
+    grid-template-columns: 1fr 50% 35%;
+  }
+  
+  .regression_text {
+    width: 68%;
+    /* padding-left: -30%; */
+    /* left: 0%; */
+  }
+  
+  .regression_img {
+    width: 100%;
+    /* right: 0%; */
+    /* margin-left: 65%; */
+  }

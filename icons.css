@@ -1,0 +1,115 @@
+/*
+ *************
+ * Social Handles 
+ *************
+*/
+#icons {
+    /* position: -webkit-sticky; Required for Safari */
+    display: inline-table;
+    position: sticky;
+    /* height: 100%; */
+    background: rgb(44, 54, 71, 0.7);
+    width: 14%;
+    top: 16%;
+    left: 10%;
+    text-align: left;
+    
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /* background-color: khaki; */
+    margin-left: 10%;
+    margin-top: 20vh;
+    
+    
+    float: left;
+    border:0.2vh solid #484a41;
+    border-radius: 1vh;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    padding-left: 0.5vw;
+  }
+
+  #icons .row {
+    display: flex;
+    margin-bottom: 1vh;
+    /* margin-top: 2vh; */
+    width: auto;
+    height: 3vh;
+    /* border-top: 0.2 vh solid red */
+    /* text-align: center; */
+    align-items: center; 
+    
+    padding-left: 0.5vw;
+    margin-right: 0.5vw;
+    background: rgb(22, 33, 51);
+    border-radius: 1vh;
+    border:thin groove #484a41;
+    /* border: groove; */
+    /* border-width: 0.1vh; */
+    
+  }
+
+  #icons h4 {
+    display: flex;
+    
+    /* text-decoration: underline; */
+    /* text-align: center; */
+
+    /* margin-bottom: -5%;
+    margin-top: -5%; */
+
+    /* padding-top: 1vh;
+    padding-bottom: 1vh; */
+    font-size: large;
+  }
+
+  #icons p {
+    font-size: 60%;
+    text-align: left;
+    /* padding-top: 10%; */
+    /* margin-top: 10%; */
+    margin-left: 10%;
+
+  }
+
+
+  #icons a {
+    display: block;
+    text-align: left;
+    
+    /* left: 0; */
+    height: auto;
+    width: auto;
+    /* margin-top: 10%; */
+    /* padding: 100px; */
+    transition: all 0.3s ease;
+    
+    /* font-size: 20px; */
+}
+
+#icons a:hover {
+    transform: scale(1);
+    position: relative;
+    margin-left: 20%;
+    -webkit-transition: margin-left transform 5000ms linear;
+    -moz-transition: margin-left transform 5000ms linear;
+    -o-transition: margin-left transform 5000ms linear;
+    -ms-transition: margin-left transform 5000ms linear;
+    transition: margin-left transform 5000ms linear;
+    filter: brightness(2.43);
+  }
+
+  #icons .logostyle_b{
+    height: 15%;
+    width: 15%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 2.5%;
+  }
+
+  #icons .logostyle_a{
+    width: 20%;
+    height: 20%;
+    padding-top: 1.5%;
+  }
