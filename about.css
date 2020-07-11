@@ -18,9 +18,10 @@
 
 
 
-.headshot {
+/* .headshot {
   display: grid;
-  grid-template-columns: 17.5% 10vw 1fr 35%;
+  grid-template-columns: 7vw 13vw 1fr 35%;
+  
 }
 
 #head_text {
@@ -31,8 +32,8 @@
 #head_img {
   width: 10vw;
   margin: 0;
-  /* padding-right: 10vw; */
-}
+  padding: 0;
+} */
 
 .awards {
   margin-top: 2vh;
