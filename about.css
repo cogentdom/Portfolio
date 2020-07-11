@@ -4,7 +4,7 @@
 }
 
 #textfield_about {
-  height: 490vh;
+  height: 530vh;
   border-top:0.2vh solid #484a41
 }
 
@@ -16,16 +16,7 @@
   /* padding-bottom: -2vh; */
 }
 
-h2 {  
-  margin-left: 30%;
-  right: 35%;
-  padding-bottom: 1vh;
-  margin-bottom: 2vh;
-  padding-top: 2vh;
-  font-size: x-large;
-  border-bottom:0.2vh solid #750303;
-  width: 35%;
-}
+
 
 .headshot {
   display: grid;
