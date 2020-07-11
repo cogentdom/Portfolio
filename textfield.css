@@ -67,6 +67,14 @@
     color: #e2e2e2;
     font-weight: lighter;
   }
+
+  ol {
+    margin-left: 33vw;
+    padding-right: 35vw;
+    padding-top: 2vh;
+    
+    font-size: normal;
+  }
   
   .list_unsorted {
     margin-left: 33vw;
@@ -112,7 +120,7 @@
     border-bottom:0.2vh solid #0b1947;
     width: 27vw;
     padding-bottom: 0.4vh;
-    padding-top: 2vh;
+    padding-top: 1vh;
     margin-bottom: 1vh;
   }
 
