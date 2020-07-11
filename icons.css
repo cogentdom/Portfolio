@@ -9,17 +9,17 @@
     position: sticky;
     /* height: 100%; */
     background: rgb(44, 54, 71, 0.7);
-    width: 14%;
-    top: 16%;
+    width: 14vw;
+    top: 1vh;
     left: 10%;
     text-align: left;
     
-    -webkit-transform: translateY(-50%);
+    /* -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
     /* background-color: khaki; */
     margin-left: 10%;
-    margin-top: 20vh;
+    margin-top: 7vh;
     
     
     float: left;
@@ -44,7 +44,7 @@
     margin-right: 0.5vw;
     background: rgb(22, 33, 51);
     border-radius: 1vh;
-    border:thin groove #484a41;
+    border:medium groove #484a41;
     /* border: groove; */
     /* border-width: 0.1vh; */
     
@@ -52,7 +52,7 @@
 
   #icons h4 {
     display: flex;
-    
+    font-weight: 300;
     /* text-decoration: underline; */
     /* text-align: center; */
 
@@ -61,7 +61,7 @@
 
     /* padding-top: 1vh;
     padding-bottom: 1vh; */
-    font-size: large;
+    font-size: medium;
   }
 
   #icons p {
