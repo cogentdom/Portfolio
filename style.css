@@ -118,6 +118,23 @@
 }
 
 @media only screen and (max-width: 8in) {
+  .title {
+    display: inline;
+    /* grid-template-rows: 1fr 1fr; */
+    padding: 0;
+  }
+  .title h1{
+    left: 0.5vw;
+    margin-left: 0.5vw;
+    padding: 0;
+  }
+  .navbar a {
+    font-size: x-large;
+    padding-left: 1vh;
+  }
+  .header {
+    grid-template-columns: 70% 1fr 1fr;
+  }
   .h2_sec {
       width: 65vw; 
   }
