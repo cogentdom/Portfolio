@@ -49,7 +49,7 @@
 
 .job_header {
   display: grid;
-  grid-template-rows: 4vh 4vh;
+  grid-template-rows: 4.5vh 4vh;
   /* height: 8vh; */
 }
 
@@ -57,11 +57,12 @@
   padding-bottom: 0;
   margin-bottom: 0;
   text-indent: 0.8vw;
+  padding-bottom: 0.5vh;
 }
 
 .job_header p {
   margin: 0;
-  padding-top: 0.5vh;
+  padding-top: 1vh;
   text-indent: 0.8vw;
 }
 /* img {

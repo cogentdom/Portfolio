@@ -74,10 +74,12 @@
 
 .h2_sec {
   margin-left: 30vw;
-  width: 32vw;
+  width: 33.2vw;
   padding-left: 0.8vw;
-  border-left: 0.3vh groove #1c5c22;
-  border-top: 0.3vh groove #1c5c22;
+  border-left: 0.3vh groove #450c0c;
+  border-top: 0.3vh groove #450c0c;
+
+  
   border-radius: 0.3vw;
   /* border-left: 0.2vh solid #452481;
   border-top: 0.2vh solid #452481; */
@@ -88,13 +90,14 @@
 
 .h3_sec {
   /* margin-left: 30.5vw; */
-  width: 32.5vw;
+  width: 33.2vw;
   padding-left: 0.8vw;
   /* border-left: 0.2vh solid #484a41;
   border-top: 0.2vh solid #484a41; */
-
-  border-left: 0.3vh groove #452481;
-  border-top: 0.3vh groove #452481;
+  border-left: 0.3vh groove #1c5c22;
+  border-top: 0.3vh groove #1c5c22;
+  /* border-left: 0.3vh groove #452481;
+  border-top: 0.3vh groove #452481; */
   border-radius: 0.3vw;
   /* border-left: 0.2vh solid #750303;
   border-top: 0.2vh solid #750303; */
@@ -104,9 +107,11 @@
 }
   
 .h5_sec {
-  width: 32.5vw;
-  border-left: 0.3vh groove #484a41;
-  border-top: 0.3vh groove #484a41;
+  width: 33.2vw;
+  border-left: 0.3vh groove #452481;
+  border-top: 0.3vh groove #452481;
+  /* border-left: 0.3vh groove #1c5c22;
+  border-top: 0.3vh groove #1c5c22; */
   padding-left: 0.8vw;
   padding-top: 1vh;
   border-radius: 0.3vw;

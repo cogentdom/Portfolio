@@ -45,174 +45,205 @@
         <div id="textfield_ipi" class="textfield">
             <!-- Introduction -->
             <h2>Financial Spending Model</h2>
-            <p>A three month service learning project for the Idaho Policy Institute(IPI); this is a project I completed for my graduate data science course at Boise State. This Project successfully makes use of Idaho's municipal government financial data by providing insightful models to augment the decision making process. This specifically correlates government expenditure and crime allowing for the optimization of all future investments. </p>     
-            <p>View the <a href="https://github.com/Chief-Dom/Graduate-Data-Science-Final" target="_blank" style="color: #3366cc;">Project Repository</a> for a deeper dive into the code</p>
-            
-
-            <h3>Meeting the Client:</h3>
-            <p>Dr. Cheong Kim from the Idaho Policy Institute has assembled a file containing data on finances, population, and crime for virtually every city in Idaho. Dr. Kim and his colleagues are social scientists performing research to assist decision makers in answering the difficult decisions of the day, and helps state and local government leaders navigate change and forge strong directions for a better Idaho.  </p>
-            <h5>Objective of the Project</h5>
-            <p>With the desire to augment the decision making process for state and local government bodies, Dr. Kim sought to improve the investment process of government funds. It was asked that my team and I identify expenditure trends relation to various crime statistics. In doing so these decison makers would have a more optimized ability to allocate resources. </p>
-            
-            <h3>Initial Database</h3>
-            <h5>Database Overview</h5>
-            
-            <ul class="list_unsorted">
-                <h4>Idaho Municipal Database</h4>
-                <li>Scope: municipalities in Idaho, 1995 - 2014/5</li>
-                <li>23 non-fiscal variables (e.g., government employees, crimes,
-                    Metro/Micro SA status, population, pop density, nonprofits, and
-                    businesses)</li>
-                <li>576 fiscal variables, which derived from the Government Finance
-                    Database produced by Pierson, Hand, and Thompson (2015)</li>
-            </ul>
-            <img class="text_img" src="image_files/city_a.png">
-            <img class="text_img" src="image_files/city_b.png">
-            <img class="text_img" src="image_files/city_c.png">
-           
-            <ul class="list_unsorted">
-               <h4>Idaho County Database</h4>
-               <li>Scope: counties in Idaho, 1995-2015/6</li>
-               <li>Currently, 11 variables (e.g., crimes, nonprofits, businesses, and
-                    income) + populations and pop density are being added by Jeff’s
-                    class.</li>
-                <li>A large number of fiscal variables will be incorporated from the
-                    Government Finance Database produced by Pierson, Hand, and
-                    Thompson (2015) down the road.</li>
-            </ul>
-            <img class="text_img" src="image_files/county_a.png">
-            <img class="text_img" src="image_files/county_b.png">
-
-
-            <ul class="list_unsorted">
-               <h4>Government Finance Database</h4>
-               <li>Idaho Municipal/County Databases: Fiscal variables for Idaho derived from
-                    the Government Finance Database produced by Pierson, Hand, and
-                    Thompson (2015) who compiled the U.S. Census Bureau’s government
-                    financial statistics.</li>
-                <li>The Census Bureau’s government financial statistics are created by merging
-                    two series of financial information: Census of Government Finance and
-                    Employment Data (years ending 2 and 7) and Annual Survey of State &
-                    Local Government Finances (in-between years).</li>
-                <li>Dollar amounts are expressed in thousands of nominal dollars (Pierson et
-                    al. 2015, p.3).</li>
-                <li>This <a href="http://www.willamette.edu/mba/research_impact/public_datasets/" target="_blank" style="color: #3366cc;">database</a> is publicly available</li>
-
-                <ul id="list_sub">
-                    <h4 id="list_sub_title">Advantages:</h4>
-                    <li>Comprehensive database in one standardized format in one file</li>
-                    <li>Basic but critical measures are provided, which were unavailable in
-                        the original Census Bureau’s government financial statistics; e.g.,
-                        total revenue, total expenditure among others.</li>
-
-                    <h4 id="list_sub_title">Limitations:</h4>
-                    <li>Self-reported numbers: for best accuracy, actual government budget
-                        doc/CAFR should be the best. So, if you are interested in a small number of
-                        governments (say up to 10) or current budget numbers, go to the
-                        government websites and obtain the actual dollar numbers. But, if you are
-                        interested in comparing many governments (say 100) at the same time and
-                        creating an average trend chart from them, collecting data would be
-                        time-consuming. In this case, this database could be a good source.</li>
-                    <li>Overrepresentation of large municipalities in-between years.</li>
-                    <li>Lots of missings values.</li>
-                </ul>
-            </ul>
-            <!-- The Data Itself and Early Stage Preparation -->
-            <h5>Data Manual</h5>
-
-
-            <h5>Importing new Data</h5>
-            <p>We felt this dataset was useful relevant information e.g. employment and business statistics. After importing we merged these tables with the one provided by IPI, or in one case made an additional table. Listed below are all additional sources.</p>
-            <ul class="list_unsorted">
-                <h4>Data Sources</h4>
-                <li>U.S. Census Bureau (USC)</li>
-                <p id="list_item">Provides population measurments at various entity levels including state, county and city</p>
-                <li>Willamette Government Finance Database (GFD)</li>
-                <p id="list_item">Provides goverment cash flow information for each city/county in Idaho</p>
-                <li>Federal Bureau of Investigation (FBI) </li>
-                <p id="list_item">Describes various crime variables</p>
-                <li>Bureau of Labor Statistics (BLS) </li>
-                <p id="list_item">Allows for adjustment for inflation and provides employment related statistics</p>
-            </ul>
-
-            <h3>Backend Functions We Created</h3>
-            <p>We created many functions and methods to augment our work such as converting to real dollars using the current year as a parameter. We also did this to regularize some of our variables. Furthermore there are many plotting functions such as heat maps, matricies of distributions and scatter plots, choropleth maps , etc. These methods and functions are all stored within the support folder and have their own documentation. These were hidden for aesthetics and need not be read to understand the process of this notebook.</p>
-  
-            <!-- Data Exploration -->
-
-            <h3>Exploring & Modeling of Municipial Dataset:</h3>
-            <p>This is a project presented to my partners and me by our client, The Idaho Policy Institute, In which they provided a dataset containing information on finances, population and crime for virtually every city and/or county in Idaho. The goal of the project was to find relationships between financial decisions with crime and employment trends in cities of Idaho with efferent sizes.</p>
-            
-            <h3>Objectives for our Models</h3>
-            <p>The amount of columns contained within the set describing crime amounted to 7 however there were over 500 variables describing financial revenue or expenditure. Using this knowledge we thought it best to attempt to describe crime using financial information as our independent variables (along with additional information). We chose to do this so that we would not limit the features available for our models along with the ability of this type of model to provide a good description of the relation between government finances and crime. The variables describing crime were quantities of occurances so to use this as our dependent variable we needed to construct a regression model.
-                A future iteration of this project one might create a classifier that describes whether an increase or decrease in a feature will result in an increase or decease in crime. We do not address this effect of each feature directly to our dependent as to avoid feature phishing.</p>
-            <h5>Selecting a Model</h5>
-            <p>Since this a panel dataset we wanted to account for the serial correlation resulting from the time series. Additionally we thought a linear model the easiest to interpret and understand the inner workings of the data itself. This lead us to a time effects model for our initial build, however the world is not linear and features will likely contain heteroskedasticity so past comprehension a non-linear approach will likely be a more robust and accurate model.</p>
-            
-            <h3>What is OLS and it's Assumptions</h3>
-            <ul class="list_unsorted">
-                <h4>Least Squares Assumptions</h4>
-                <li>Error has a Conditional Mean Zero</li>
-                    <p id="list_item">Provides population measurments at various entity levels including state, county and city</p>
-                <li>Features are identically independently distributed</li>
-                    <p id="list_item">Provides goverment cash flow information for each city/county in Idaho</p>
-                <li>No Perfect MultiCollinearity</li>
-                    <p id="list_item">Describes various crime variables</p>
-                <li>Large Outliers are Unlikely</li>
-                    <p id="list_item">Nonzero finite fourth moments</p>
-            </ul>
-            <!-- Data Cleansing and Interpolation -->
-            <h3>Preprossesing</h3>
-
-
-            <h5>Train Validation Test Split</h5>
-            <p></p>
-            <h5>Interpolation</h5>
-            <p></p>
-            <!-- Constructing Models -->
-            <h3>Solving for some Hyperparameters</h3>
-            <p></p>
-            <h3>Safegaurding against Omitted Variable Bias</h3>
-            <h5>Lasso</h5>
-            <p></p>
-
-            <h5>Chi Squared Test</h5>
-            <p></p>
-
-            <h5>Handling MultiCollinearity</h5>
-            <p></p>
-
-            <!-- Analysis of Regression -->
-            <h3>OLS Time Effects Regression Model</h3>
-            <h5>Summarizing Results</h5>
-            
-           
-            
-            <p>
-
-                This model appears to be a good representation of the data. From this we can see that Population, Total_CashSecurities, Nonin_Trust_CashSec, Total_Expenditure, ect. all are largly statistically significant in identifying Total Theft
+            <section class="h2_sec">
+                <p>A three month service learning project for the Idaho Policy Institute(IPI); this is a project I completed for my graduate data science course at Boise State. This Project successfully makes use of Idaho's municipal government financial data by providing insightful models to augment the decision making process. This specifically correlates government expenditure and crime allowing for the optimization of all future investments. </p>     
+                <p>View the <a href="https://github.com/Chief-Dom/Graduate-Data-Science-Final" target="_blank" style="color: #3366cc;">Project Repository</a> for a deeper dive into the code</p>
                 
-                Population and Total Expenditure seem to be accurate in describing Total Theft with low standard errors. This makes logical sense in that the more people in an area the more crime. Oth_Nonin_Fd_CashSec, Tot_Chgs_and_Misc_Rev and Nonin_TrustCashSec also have low std. errors.
+
+                <h3>Meeting the Client:</h3>
+                <section class="h3_sec">
+                    <p>Dr. Cheong Kim from the Idaho Policy Institute has assembled a file containing data on finances, population, and crime for virtually every city in Idaho. Dr. Kim and his colleagues are social scientists performing research to assist decision makers in answering the difficult decisions of the day, and helps state and local government leaders navigate change and forge strong directions for a better Idaho.  </p>
+                    <h5>Objective of the Project</h5>
+                    <section class="h5_sec">
+                        <p>With the desire to augment the decision making process for state and local government bodies, Dr. Kim sought to improve the investment process of government funds. It was asked that my team and I identify expenditure trends relation to various crime statistics. In doing so these decison makers would have a more optimized ability to allocate resources. </p>
+                    </section>
+                </section>
+                <h3>Initial Database</h3>
+                <section class="h3_sec">
+                    <h5>Database Overview</h5>
+                    <section class="h5_sec">
+                        <ul class="list_unsorted">
+                            <h4>Idaho Municipal Database</h4>
+                            <li>Scope: municipalities in Idaho, 1995 - 2014/5</li>
+                            <li>23 non-fiscal variables (e.g., government employees, crimes,
+                                Metro/Micro SA status, population, pop density, nonprofits, and
+                                businesses)</li>
+                            <li>576 fiscal variables, which derived from the Government Finance
+                                Database produced by Pierson, Hand, and Thompson (2015)</li>
+                        </ul>
+                        <img class="text_img" src="image_files/city_a.png">
+                        <img class="text_img" src="image_files/city_b.png">
+                        <img class="text_img" src="image_files/city_c.png">
+                    
+                        <ul class="list_unsorted">
+                        <h4>Idaho County Database</h4>
+                        <li>Scope: counties in Idaho, 1995-2015/6</li>
+                        <li>Currently, 11 variables (e.g., crimes, nonprofits, businesses, and
+                                income) + populations and pop density are being added by Jeff’s
+                                class.</li>
+                            <li>A large number of fiscal variables will be incorporated from the
+                                Government Finance Database produced by Pierson, Hand, and
+                                Thompson (2015) down the road.</li>
+                        </ul>
+                        <img class="text_img" src="image_files/county_a.png">
+                        <img class="text_img" src="image_files/county_b.png">
+
+
+                        <ul class="list_unsorted">
+                        <h4>Government Finance Database</h4>
+                        <li>Idaho Municipal/County Databases: Fiscal variables for Idaho derived from
+                                the Government Finance Database produced by Pierson, Hand, and
+                                Thompson (2015) who compiled the U.S. Census Bureau’s government
+                                financial statistics.</li>
+                            <li>The Census Bureau’s government financial statistics are created by merging
+                                two series of financial information: Census of Government Finance and
+                                Employment Data (years ending 2 and 7) and Annual Survey of State &
+                                Local Government Finances (in-between years).</li>
+                            <li>Dollar amounts are expressed in thousands of nominal dollars (Pierson et
+                                al. 2015, p.3).</li>
+                            <li>This <a href="http://www.willamette.edu/mba/research_impact/public_datasets/" target="_blank" style="color: #3366cc;">database</a> is publicly available</li>
+
+                            <ul id="list_sub">
+                                <h4 id="list_sub_title">Advantages:</h4>
+                                <li>Comprehensive database in one standardized format in one file</li>
+                                <li>Basic but critical measures are provided, which were unavailable in
+                                    the original Census Bureau’s government financial statistics; e.g.,
+                                    total revenue, total expenditure among others.</li>
+
+                                <h4 id="list_sub_title">Limitations:</h4>
+                                <li>Self-reported numbers: for best accuracy, actual government budget
+                                    doc/CAFR should be the best. So, if you are interested in a small number of
+                                    governments (say up to 10) or current budget numbers, go to the
+                                    government websites and obtain the actual dollar numbers. But, if you are
+                                    interested in comparing many governments (say 100) at the same time and
+                                    creating an average trend chart from them, collecting data would be
+                                    time-consuming. In this case, this database could be a good source.</li>
+                                <li>Overrepresentation of large municipalities in-between years.</li>
+                                <li>Lots of missings values.</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <!-- The Data Itself and Early Stage Preparation -->
+                    <h5>Data Manual</h5>
+                    <section class="h5_sec"></section>
+
+                    <h5>Importing new Data</h5>
+                    <section class="h5_sec">
+                        <p>We felt this dataset was useful relevant information e.g. employment and business statistics. After importing we merged these tables with the one provided by IPI, or in one case made an additional table. Listed below are all additional sources.</p>
+                        <ul class="list_unsorted">
+                            <h4>Data Sources</h4>
+                            <li>U.S. Census Bureau (USC)</li>
+                            <p id="list_item">Provides population measurments at various entity levels including state, county and city</p>
+                            <li>Willamette Government Finance Database (GFD)</li>
+                            <p id="list_item">Provides goverment cash flow information for each city/county in Idaho</p>
+                            <li>Federal Bureau of Investigation (FBI) </li>
+                            <p id="list_item">Describes various crime variables</p>
+                            <li>Bureau of Labor Statistics (BLS) </li>
+                            <p id="list_item">Allows for adjustment for inflation and provides employment related statistics</p>
+                        </ul>
+                    </section>
+                </section>
+                <h3>Backend Functions We Created</h3>
+                <section class="h3_sec">
+                    <p>We created many functions and methods to augment our work such as converting to real dollars using the current year as a parameter. We also did this to regularize some of our variables. Furthermore there are many plotting functions such as heat maps, matricies of distributions and scatter plots, choropleth maps , etc. These methods and functions are all stored within the support folder and have their own documentation. These were hidden for aesthetics and need not be read to understand the process of this notebook.</p>
+                </section>
+
+
+                <!-- Data Exploration -->
+                <h3>Exploring & Modeling of Municipial Dataset:</h3>
+                <section class="h3_sec">
+                    <p>This is a project presented to my partners and me by our client, The Idaho Policy Institute, In which they provided a dataset containing information on finances, population and crime for virtually every city and/or county in Idaho. The goal of the project was to find relationships between financial decisions with crime and employment trends in cities of Idaho with efferent sizes.</p>
+                </section>
+
+                <h3>Objectives for our Models</h3>
+                <section class="h3_sec">
+                    <p>The amount of columns contained within the set describing crime amounted to 7 however there were over 500 variables describing financial revenue or expenditure. Using this knowledge we thought it best to attempt to describe crime using financial information as our independent variables (along with additional information). We chose to do this so that we would not limit the features available for our models along with the ability of this type of model to provide a good description of the relation between government finances and crime. The variables describing crime were quantities of occurances so to use this as our dependent variable we needed to construct a regression model.
+                        A future iteration of this project one might create a classifier that describes whether an increase or decrease in a feature will result in an increase or decease in crime. We do not address this effect of each feature directly to our dependent as to avoid feature phishing.</p>
+                    <h5>Selecting a Model</h5>
+                    <section class="h5_sec">
+                        <p>Since this a panel dataset we wanted to account for the serial correlation resulting from the time series. Additionally we thought a linear model the easiest to interpret and understand the inner workings of the data itself. This lead us to a time effects model for our initial build, however the world is not linear and features will likely contain heteroskedasticity so past comprehension a non-linear approach will likely be a more robust and accurate model.</p>
+                    </section>
+                </section>
+
+                <h3>What is OLS and it's Assumptions</h3>
+                <section class="h3_sec">
+                    <ul class="list_unsorted">
+                        <h4>Least Squares Assumptions</h4>
+                        <li>Error has a Conditional Mean Zero</li>
+                            <p id="list_item">Provides population measurments at various entity levels including state, county and city</p>
+                        <li>Features are identically independently distributed</li>
+                            <p id="list_item">Provides goverment cash flow information for each city/county in Idaho</p>
+                        <li>No Perfect MultiCollinearity</li>
+                            <p id="list_item">Describes various crime variables</p>
+                        <li>Large Outliers are Unlikely</li>
+                            <p id="list_item">Nonzero finite fourth moments</p>
+                    </ul>
+                </section>
+
+                <!-- Data Cleansing and Interpolation -->
+                <h3>Preprossesing</h3>
+                <section class="h3_sec">
+                    <h5>Train Validation Test Split</h5>
+                    <p></p>
+                    <h5>Interpolation</h5>
+                    <p></p>
+                </section>
+
+                <!-- Constructing Models -->
+                <h3>Solving for some Hyperparameters</h3>
+                <section class="h3_sec">
+                    <p></p>
+                </section>
+
+                <h3>Safegaurding against Omitted Variable Bias</h3>
+                <section class="h3_sec">
+                    <h5>Lasso</h5>
+                    <section class="h5_sec">
+                        <p></p>
+                    </section>
+                    <h5>Chi Squared Test</h5>
+                    <section class="h5_sec">
+                        <p></p>
+                    </section>
+
+                    <h5>Handling MultiCollinearity</h5>
+                    <section class="h5_sec">
+                        <p></p>
+                    </section>
+                </section>
+                <!-- Analysis of Regression -->
+                <h3>OLS Time Effects Regression Model</h3>
+                <section class="h3_sec">
+                    <h5>Summarizing Results</h5>
+                    
                 
-                Our final P-value appears to be statistically significant so lets use our test data to see how it performs with unseen data.
-            </p>
-            
-            <img class="text_img" src="image_files/regress_summary.png">
-        
-        
-            <h5>Identifying the Correlation</h5>
+                    
+                    <p>
 
-        
-            
-            <p>Nice correlation but lets avoid phishing</p>
-            <img class="text_img" src="image_files/regress_correlation.png">
-            
+                        This model appears to be a good representation of the data. From this we can see that Population, Total_CashSecurities, Nonin_Trust_CashSec, Total_Expenditure, ect. all are largly statistically significant in identifying Total Theft
+                        
+                        Population and Total Expenditure seem to be accurate in describing Total Theft with low standard errors. This makes logical sense in that the more people in an area the more crime. Oth_Nonin_Fd_CashSec, Tot_Chgs_and_Misc_Rev and Nonin_TrustCashSec also have low std. errors.
+                        
+                        Our final P-value appears to be statistically significant so lets use our test data to see how it performs with unseen data.
+                    </p>
+                    
+                    <img class="text_img" src="image_files/regress_summary.png">
+                
+                
+                    <h5>Identifying the Correlation</h5>
 
-        <!-- Identify Davids (linkedin) 4 features for having made an impact-->
-        
-        <!-- Conclusions and what to do from here-->
-        <h5 >Causal Inference</h5>
-        
+                
+                    
+                    <p>Nice correlation but lets avoid phishing</p>
+                    <img class="text_img" src="image_files/regress_correlation.png">
+                
+                </section>
+                <!-- Identify Davids (linkedin) 4 features for having made an impact-->
+                
+                <!-- Conclusions and what to do from here-->
+                <h5 >Causal Inference</h5>
+            </section>   
+        </div> 
     </section>
 
     <footer>
