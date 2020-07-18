@@ -196,6 +196,13 @@
   .header {
     grid-template-columns: 45% 1fr 1fr;
   }
+  #sec_small {
+    width: 59vw;
+  }
+
+  #h2_small {
+    width: 60vw;
+  }
   .h2_sec {
     margin-left: 5vw;
     width: 82vw;
