@@ -55,20 +55,22 @@
 
 .job_header {
   display: grid;
-  grid-template-rows: 4.5vh 4vh;
+  grid-template-rows: 4vh 2vh 2vh;
   /* height: 8vh; */
+  /* border: transparent; */
 }
 
 .job_header h5 {
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
   margin-bottom: 0;
   text-indent: 0.8vw;
-  padding-bottom: 0.5vh;
+  /* padding-bottom: 0.5vh; */
 }
 
 .job_header p {
   margin: 0;
-  padding-top: 1vh;
+  padding: 0;
+  /* padding-top: 1vh; */
   text-indent: 0.8vw;
 }
 /* img {
