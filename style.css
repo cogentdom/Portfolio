@@ -65,8 +65,27 @@
 
 }
 .navbar a {
-  padding-right: 0.5vw;
-  padding-left: 0.5vw;
+  /* padding-right: 0.5vw;
+  padding-left: 0.5vw; */
+  padding: 0.5vw;
+  border: 0.3vh groove #453d0c;
+  border-radius: 25px;
+  /* background-color: #453d0c6c; */
+  background-color: rgb(29, 36, 49);
+  backface-visibility: 0.5;
+  margin: 0.5vh  0.5vw ;
+}
+
+.navbar a:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+
+  -webkit-transition: transform 200ms linear;
+  -moz-transition: transform 200ms linear;
+  -o-transition: transform 200ms linear;
+  -ms-transition: transform 200ms linear;
+  transition: transform 200ms linear;
+  transition-delay:0.1s;
 }
 /* .a {background-color: aliceblue}
 .b {background-color: bisque} */
