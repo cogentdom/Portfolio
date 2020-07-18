@@ -4,15 +4,15 @@
 }
 
 #textfield_about {
-  height: 580vh;
+  height: auto;
   border-top:0.2vh solid #484a41
 }
 
-@media only screen and (max-width: 8in) {
+/* @media only screen and (max-width: 8in) {
   #textfield_about {
     height: 580vh;
   }
-}
+} */
 
 #employer {
   margin-top: -2vh;

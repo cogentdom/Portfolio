@@ -39,6 +39,7 @@
     /* opacity: 0.9; */
     /* text-indent: 15%; */
     text-decoration: underline;
+    white-space: nowrap;
 }
 
 .headerArt p {
@@ -51,6 +52,7 @@
   margin-top: -15%;
   /* text-indent: 15%; */
   /* text-decoration: underline; */
+  white-space: nowrap;
 }
 
 

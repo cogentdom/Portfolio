@@ -129,7 +129,7 @@
   
   .textfield h4 {
     /* margin-left: 2vw; */
-    border-bottom:0.2vh solid #484a41;
+    border-bottom: 0.3vh groove #453d0c;
     width: 27vw;
     padding-bottom: 0.4vh;
     padding-top: 1vh;
@@ -162,7 +162,7 @@
     /* margin-left: 30vw; */
   } 
 
-  @media only screen and (max-width: 8in) {
+  @media only screen and (max-width: 10in) {
     .textfield h2 {
           width: 65vw;
     }

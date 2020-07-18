@@ -126,11 +126,21 @@
                     </section>
                     <!-- The Data Itself and Early Stage Preparation -->
                     <h5>Data Manual</h5>
-                    <section class="h5_sec"></section>
+                    <section class="h5_sec">
+                        <p>The data was stored and presented to us as csv files. There were 201 different csv files each of which described a city in Idaho and were structured like so:</p>
+                        <ul class="list_unsorted">
+                            <h4>CSV Files</h4>
+                            <li>Spanning 20 years (unbalanced)</li>
+                            <li>618 columns describing finance, crime, population etc.</li>
+                            <li>Financial data in nominal dollars</li>
+                            <li>Unique values for county & city data</li>
+                        </ul>
+                        <p>Each of these 618 varaibales were encoded and required a manual to understand what was being represented. I am unfortunatly not at liberty to present this manual at this time however, I will fully describe all variables used in this documentation.</p>
+                    </section>
 
                     <h5>Importing new Data</h5>
                     <section class="h5_sec">
-                        <p>We felt this dataset was useful relevant information e.g. employment and business statistics. After importing we merged these tables with the one provided by IPI, or in one case made an additional table. Listed below are all additional sources.</p>
+                        <p>The provided dataset contained a lot of missing values so we felt it important to add more features that possessed every data point. This was tricky because not only did we have to load data but we had to do it to every csv. To solve this we made a backend funtion that combined all of the csv files into one. After importing we merged these tables with the one provided by IPI, or in one case made an additional table. Listed below are all additional sources.</p>
                         <ul class="list_unsorted">
                             <h4>Data Sources</h4>
                             <li>U.S. Census Bureau (USC)</li>
@@ -142,6 +152,7 @@
                             <li>Bureau of Labor Statistics (BLS) </li>
                             <p id="list_item">Allows for adjustment for inflation and provides employment related statistics</p>
                         </ul>
+                        <p></p>
                     </section>
                 </section>
                 <h3>Backend Functions We Created</h3>
@@ -154,6 +165,7 @@
                 <h3>Exploring & Modeling of Municipial Dataset:</h3>
                 <section class="h3_sec">
                     <p>This is a project presented to my partners and me by our client, The Idaho Policy Institute, In which they provided a dataset containing information on finances, population and crime for virtually every city and/or county in Idaho. The goal of the project was to find relationships between financial decisions with crime and employment trends in cities of Idaho with efferent sizes.</p>
+                    <img class="text_img" src="./image_files/data_densities.png">
                 </section>
 
                 <h3>Objectives for our Models</h3>
@@ -243,8 +255,13 @@
                 
                 <!-- Conclusions and what to do from here-->
                 <h5 >Causal Inference</h5>
+                <section class="h5_sec">
+                    <p></p>
+                </section>
             </section>   
+            <p></p>
         </div> 
+        
     </section>
 
     <footer>
