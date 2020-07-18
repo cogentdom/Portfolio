@@ -147,19 +147,9 @@
    *************
   */
 
-  /* .reg_anyl {
-    display: grid;
-    grid-template-columns: 30vw 1fr 34vw;
-  }
   
-  .regression_text {
-    width: 34vw;
-   
-  }
-  */
   .text_img {
     width: 34vw;
-    /* margin-left: 30vw; */
   } 
 
   @media only screen and (max-width: 10in) {
@@ -186,62 +176,43 @@
     }
   }
 
-  @media only screen and (max-width: 6in) {
+@media only screen and (max-width: 6in) {
     .textfield h2 {
-      padding: 0;
-      /* margin: 0; */
-      margin-left: 5vw;
-      /* left: 1vw; */
-      /* float: left; */
-      /* right: 100vw; */
-      width: 82vw;
-      /* z-index: 1; */
-      /* position: relative; */
+        padding: 0;
+        /* margin: 0; */
+        margin-left: 5vw;
+        /* left: 1vw; */
+        /* float: left; */
+        /* right: 100vw; */
+        width: 82vw;
+        /* z-index: 1; */
+        /* position: relative; */
     }
     .textfield h3 {
-      width: 82vw; 
+        width: 82vw; 
     }
     .textfield h5 {
-      width: 82vw; 
+        width: 82vw; 
     }
     .textfield h4 {
-      width: 82vw; 
+        width: 82vw; 
     }
     .list_unsorted {
-      width: 65vw;
-      margin-left: 2vw;
+        width: 65vw;
+        margin-left: 2vw;
     }
     ol {
-      width: 65vw;
+        width: 65vw;
     }
     .text_img {
-      width: 80vw;
+        width: 80vw;
     }
     #list_sub li {
-      width: 65vw;
-      /* padding-left: 20vw; */
+        width: 65vw;
+        /* padding-left: 20vw; */
     }
     #list_item {
-      width: 65vw;
-      /* margin-left: 2vw; */
+        width: 65vw;
+        /* margin-left: 2vw; */
     }
-  }
-    /* .textfield h3 {
-      margin-left: 1vw;
-    }
-    .textfield h5 {
-      margin-left: 1vw;
-    }
-    .textfield h4 {
-      margin-left: 1vw;
-    }
-    .list_unsorted {
-      margin-left: 1vw;
-    }
-    ol {
-      margin-left: 1vw;
-    }
-    .text_img {
-      margin-left: 1vw;
-    }
-  }  */
+}

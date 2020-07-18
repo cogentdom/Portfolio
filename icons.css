@@ -9,26 +9,15 @@
  *************
 */
 #icons {
-    /* position: -webkit-sticky; Required for Safari */
     display: inline-table;
     position: sticky;
-    /* height: 100%; */
     background: rgb(44, 54, 71, 0.7);
     width: 14vw;
     top: 1vh;
-    /* left: 10%; */
     text-align: left;
-
-    /* -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); */
-    /* background-color: khaki; */
     margin-left: 10%;
     margin-top: 7vh;
-
-
     float: left;
-    /* border:0.2vh solid #798643; */
     border: 0.3vh groove #453d0c;
     border-radius: 1vh;
     padding-top: 2vh;
@@ -41,59 +30,39 @@
 #icons .row {
     display: flex;
     margin-bottom: 1vh;
-    /* margin-top: 2vh; */
     width: auto;
     height: 3vh;
-    /* border-top: 0.2 vh solid red */
-    /* text-align: center; */
     align-items: center; 
-
     padding-left: 0.5vw;
     margin-right: 0.5vw;
     background: rgb(22, 33, 51);
     border-radius: 1vh;
     border: 0.3vh groove #453d0c;
-    /* border: groove; */
-    /* border-width: 0.1vh; */
-
 }
 
 
 #icons h4 {
     display: flex;
     font-weight: 300;
-    /* text-decoration: underline; */
-    /* text-align: center; */
-
-    /* margin-bottom: -5%;
-    margin-top: -5%; */
-
-    /* padding-top: 1vh;
-    padding-bottom: 1vh; */
     font-size: medium;
 }
 
   #icons p {
-    font-size: 60%;
-    /* text-align: left; */
-    /* padding-top: 10%; */
-    /* margin-top: 10%; */
-    /* margin-left: 10%; */
+    font-size: medium;
     background: transparent;
+    justify-content: center;
+    align-items: center; 
+    padding: 0.5vw;
 }
 
   #icons a {
-    display: inline-block;
+    display: flex;
     text-align: left;
     background: transparent;
-    /* left: 0; */
     height: auto;
     width: auto;
-    /* margin-top: 10%; */
-    /* padding: 100px; */
     transition: all 0.3s ease;
-    
-    /* font-size: 20px; */
+    align-items: center; 
 }
 
 #icons a:hover {
@@ -137,35 +106,22 @@
 
 @media only screen and (max-width: 6in) {
     #icons {
-        /* position: relative; */
-        /* margin-left: 0.5vw; */
-     
-        /* height: 0;  */
-        /* left: 60vw; */
         opacity: 0.8;
-        /* margin-left: 0; */
-       /* right: 0.2vw; */
-       float: right;
-       /* margin-left: -30vw; */
-       text-align: right;
-       /* top: 18vh; */
-       /* margin: 0; */
-       /* padding: 0; */
-       /* width: 25vw;  */
-       /* -webkit-transform:  rotate(180deg);
-       transform:  rotate(180deg); */
-       margin-top: 6vh;
+        float: right;
+        text-align: right;
 
-       display: block;
-       
-       -webkit-transform: rotate(-180deg);
-       transform: rotate(-180deg);
+        margin-top: 6vh;
 
-       -moz-transform: scale(-1, 1);
-       -webkit-transform: scale(-1, 1);
-       -o-transform: scale(-1, 1);
-       -ms-transform: scale(-1, 1);
-       transform: scale(-1, 1);
+        display: block;
+        
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
     }
     .row {
         text-align: right;
@@ -193,14 +149,4 @@
         transform: scale(-1, 1);
         margin-top: 2vh;
     }
-    /* #icons img {
-        margin-top: 2vh;
-    } */
-    /* #icons i {
-        -moz-transform: scale(1, -1);
-        -webkit-transform: scale(1, -1);
-        -o-transform: scale(1, -1);
-        -ms-transform: scale(1, -1);
-        transform: scale(1, -1);
-    } */
 }
