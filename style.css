@@ -15,7 +15,7 @@
     background-color: #252a34;
     display: grid;
     grid-template-columns: 70% 1fr 1fr;
-    border-bottom: 0.2 vh solid #484a41;
+    border-bottom: 0.3vh groove #453d0c;
     
 }
 
@@ -90,7 +90,7 @@
 
 .h3_sec {
   /* margin-left: 30.5vw; */
-  width: 33.2vw;
+  width: 32.4vw;
   padding-left: 0.8vw;
   /* border-left: 0.2vh solid #484a41;
   border-top: 0.2vh solid #484a41; */
@@ -107,7 +107,7 @@
 }
   
 .h5_sec {
-  width: 33.2vw;
+  width: 31.6vw;
   border-left: 0.3vh groove #452481;
   border-top: 0.3vh groove #452481;
   /* border-left: 0.3vh groove #1c5c22;
@@ -126,7 +126,7 @@
     height: 6vh;
     background-color: #252a34;
     align-items: center;
-    border-top:0.2vh solid #484a41;
+    border-top: 0.3vh groove #453d0c;
 }
 
 footer p {
