@@ -28,14 +28,14 @@
   color: #ffffff;
   height: 100vh;
   display: grid;
-  grid-template-rows: 47% 1fr 1fr 43%;
+  grid-template-rows: 49vh 1fr 1fr 43vh;
 }
 
 .headerArt h1 {
     margin-right: 45%;
     font-size: 400%;
     font-weight: 700;
-    margin-top: -15%;
+    /* margin-top: -15%; */
     /* opacity: 0.9; */
     /* text-indent: 15%; */
     text-decoration: underline;
@@ -49,12 +49,25 @@
   font-size: 150%;
   opacity: 0.8;
   /* font-weight: 700; */
-  margin-top: -15%;
+  /* margin-top: -20vh; */
   /* text-indent: 15%; */
   /* text-decoration: underline; */
   white-space: nowrap;
 }
 
+@media only screen and (max-width: 10in) {
+  .headerArt p {
+   /* margin-top: -12vh; */
+  }
+ 
+}
+
+ @media only screen and (max-width: 4in) {
+   .headerArt p {
+    /* margin-top: 2vh; */
+   }
+  
+ }
 
 .body {
   display: inline;

@@ -105,7 +105,7 @@
   padding-left: 0.8vw;
   border-left: 0.3vh groove #450c0c;
   border-top: 0.3vh groove #450c0c;
-  
+
   
   border-radius: 0.5vw;
   /* border-left: 0.2vh solid #452481;
@@ -199,10 +199,12 @@
   }
   #sec_small {
     width: 55vw;
+    margin-right: 1vw;
   }
 
   #h2_small {
     width: 57vw;
+    padding-right: 1vw;
   }
   .h2_sec {
     margin-left: 5vw;
