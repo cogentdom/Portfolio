@@ -154,13 +154,15 @@
 
   @media only screen and (max-width: 10in) {
     .textfield h2 {
-      width: 65vw;
+      margin-left: 31vw;
+      width: 64vw;
+      text-indent: 1vw;
     }
     .textfield h3 {
-      width: 63vw;
+      width: 64vw;
     }
     .textfield h5 {
-      width: 61vw;
+      width: 62vw;
     }
     .textfield h4 {
       width: 45vw;
@@ -172,7 +174,7 @@
       width: 45vw;
     }
     .text_img {
-      width: 65vw;
+      width: 63vw;
     }
   }
 

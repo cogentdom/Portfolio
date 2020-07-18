@@ -64,7 +64,10 @@
     align-items: right;
 
 }
-
+.navbar a {
+  padding-right: 0.5vw;
+  padding-left: 0.5vw;
+}
 /* .a {background-color: aliceblue}
 .b {background-color: bisque} */
 
@@ -78,7 +81,7 @@
 }
 
 .h2_sec {
-  margin-left: 30vw;
+  margin-left: 31vw;
   width: 33.2vw;
   padding-left: 0.8vw;
   border-left: 0.3vh groove #450c0c;
@@ -150,7 +153,7 @@
     grid-template-columns: 50% 10% 1fr;
   }
   .h2_sec {
-      width: 65vw; 
+    width: 63vw; 
   }
   .h3_sec {
     width: 63vw; 
