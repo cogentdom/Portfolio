@@ -82,7 +82,7 @@
     /* margin-left: 33vw; */
     /* padding-right: 35vw; */
     padding-top: 2vh;
-    padding-left: 2vw;
+    margin-left: 2vw;
     font-size: normal;
     width: 27vw;
   }
@@ -209,7 +209,7 @@
     }
     ol {
         width: 65vw;
-        margin-left: 3vw;
+        margin-left: 5vw;
     }
     .text_img {
         width: 80vw;
