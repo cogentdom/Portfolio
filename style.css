@@ -25,10 +25,10 @@
  *************
 */
 .title {
-    text-align: left;
-    display: flex;
-    /* align-items: ; */
-
+  text-align: left;
+  display: inline-flex;
+  /* align-items: ; */
+  white-space: wrap;
 }
 
 .title h1 {
@@ -38,13 +38,15 @@
   width:-webkit-fit-content; 
   width:-moz-fit-content; */
   padding: 0.2vw;
-  left: 15%;
-  margin-left: 10%;
+  /* left: 1vw; */
+  margin-left: 5vw;
+  white-space: nowrap;
 }
 
 #header_title {
   opacity: 0.7;
   margin: 0;
+  white-space: nowrap;
 }
 
 /*
@@ -119,7 +121,7 @@
 
 @media only screen and (max-width: 8in) {
   .title {
-    display: inline;
+    display: inline-block;
     /* grid-template-rows: 1fr 1fr; */
     padding: 0;
   }
@@ -127,6 +129,7 @@
     left: 0.5vw;
     margin-left: 0.5vw;
     padding: 0;
+    
   }
   .navbar a {
     font-size: x-large;
