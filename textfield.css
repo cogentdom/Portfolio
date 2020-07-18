@@ -20,7 +20,7 @@
   }
   
   .textfield h2 {  
-    margin-left: 30vw;
+    margin-left: 31vw;
     right: 38vw;
     padding-bottom: 1vh;
     margin-bottom: 2vh;
@@ -28,6 +28,7 @@
     font-size: x-large;
     border-bottom: 0.3vh groove #450c0c;
     width: 34vw;
+    text-indent: 1vw;
   }
   
   .textfield h3 {
@@ -44,6 +45,7 @@
     font-size: x-large;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    text-indent: 1vw;
   }
   
  
@@ -60,7 +62,7 @@
     width: 32.4vw;
     font-style: italic;
     margin-bottom: 2vh;
-    
+    text-indent: 1vw;
   }
   
   
@@ -92,7 +94,7 @@
     padding-bottom: 1vh;
     font-size: normal;
     width: 27vw;
-    padding-left: 2vw;
+    /* padding-left: 2vw; */
   }
   
   #list_sub {
@@ -102,13 +104,14 @@
     padding-bottom: 0.5vh;
     font-size: normal;
     width: 30vw;
+    margin-left: 2vw;
   }
   .list_unsorted li {
     padding-bottom: 0.5vh;
     padding-top: 1vh;
     font-style: italic;
     /* text-decoration: underline; */
-    
+    margin-left: 2vw;
   }
   
  
@@ -134,12 +137,14 @@
     padding-bottom: 0.4vh;
     padding-top: 1vh;
     margin-bottom: 1vh;
+    
   }
 
   #list_sub_title {
     width: 12vw;
-    margin-left: 0.5vw;
+    margin-left: 2vw;
     font-size: normal;
+    text-indent: 1vw;
   }
   /*
    *************
@@ -154,9 +159,7 @@
 
   @media only screen and (max-width: 10in) {
     .textfield h2 {
-      margin-left: 31vw;
       width: 64vw;
-      text-indent: 1vw;
     }
     .textfield h3 {
       width: 64vw;
