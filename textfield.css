@@ -161,3 +161,27 @@
     width: 34vw;
     /* margin-left: 30vw; */
   } 
+
+  @media only screen and (max-width: 8in) {
+    .textfield h2 {
+          width: 65vw;
+    }
+    .textfield h3 {
+        width: 63vw;
+    }
+    .textfield h5 {
+        width: 61vw;
+    }
+    .textfield h4 {
+        width: 45vw;
+    }
+    .list_unsorted {
+        width: 45vw;
+    }
+    ol {
+        width: 45vw;
+    }
+    .text_img {
+        width: 65vw;
+    }
+  }

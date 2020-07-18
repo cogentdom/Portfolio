@@ -116,6 +116,18 @@
   padding-top: 1vh;
   border-radius: 0.3vw;
 }
+
+@media only screen and (max-width: 8in) {
+  .h2_sec {
+      width: 65vw; 
+  }
+  .h3_sec {
+    width: 63vw; 
+  }
+  .h5_sec {
+    width: 61vw; 
+  }
+}
 /*
 ***************************************************
 *       FOOTER

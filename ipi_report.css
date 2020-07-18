@@ -4,7 +4,12 @@
 }
 
 #textfield_ipi {
-    height: 1020vh;
+    height: 920vh;
     border-top:0.2vh solid #484a41
 }
 
+@media only screen and (max-width: 8in) {
+    #textfield_ipi {
+      height: 1020vh;
+    }
+  }

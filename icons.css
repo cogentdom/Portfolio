@@ -18,15 +18,15 @@
     top: 1vh;
     left: 10%;
     text-align: left;
-    
+
     /* -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); */
     /* background-color: khaki; */
     margin-left: 10%;
     margin-top: 7vh;
-    
-    
+
+
     float: left;
     /* border:0.2vh solid #798643; */
     border: 0.3vh groove #453d0c;
@@ -34,9 +34,11 @@
     padding-top: 2vh;
     padding-bottom: 1vh;
     padding-left: 0.5vw;
-  }
+}
 
-  #icons .row {
+
+
+#icons .row {
     display: flex;
     margin-bottom: 1vh;
     /* margin-top: 2vh; */
@@ -45,7 +47,7 @@
     /* border-top: 0.2 vh solid red */
     /* text-align: center; */
     align-items: center; 
-    
+
     padding-left: 0.5vw;
     margin-right: 0.5vw;
     background: rgb(22, 33, 51);
@@ -53,10 +55,10 @@
     border: 0.3vh groove #453d0c;
     /* border: groove; */
     /* border-width: 0.1vh; */
-    
-  }
 
-  #icons h4 {
+}
+
+#icons h4 {
     display: flex;
     font-weight: 300;
     /* text-decoration: underline; */
@@ -68,7 +70,7 @@
     /* padding-top: 1vh;
     padding-bottom: 1vh; */
     font-size: medium;
-  }
+}
 
   #icons p {
     font-size: 60%;
@@ -77,7 +79,7 @@
     /* margin-top: 10%; */
     margin-left: 10%;
 
-  }
+}
 
 
   #icons a {
@@ -104,18 +106,27 @@
     -ms-transition: margin-left transform 5000ms linear;
     transition: margin-left transform 5000ms linear;
     filter: brightness(2.43);
-  }
+}
 
-  #icons .logostyle_b{
+#icons .logostyle_b{
     height: 15%;
     width: 15%;
     padding-left: 2.5%;
     padding-right: 2.5%;
     padding-top: 2.5%;
-  }
+}
 
-  #icons .logostyle_a{
+#icons .logostyle_a{
     width: 20%;
     height: 20%;
     padding-top: 1.5%;
-  }
+}
+
+@media only screen and (max-width: 8in) {
+    #icons {
+        margin-left: 0.5vw;
+        width: 27vw;
+        left: 0.5vw;
+    }
+    
+}
