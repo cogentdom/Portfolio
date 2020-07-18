@@ -16,7 +16,7 @@
     background: rgb(44, 54, 71, 0.7);
     width: 14vw;
     top: 1vh;
-    left: 10%;
+    /* left: 10%; */
     text-align: left;
 
     /* -webkit-transform: translateY(-50%);
@@ -127,6 +127,25 @@
         margin-left: 0.5vw;
         width: 27vw;
         left: 0.5vw;
+    }
+    
+}
+
+@media only screen and (max-width: 4in) {
+    #icons {
+        position: relative;
+        /* margin-left: 0.5vw; */
+        /* width: 0;
+        height: 0; */
+        /* left: 60vw; */
+        opacity: 0.5;
+        /* margin-left: 0; */
+       /* right: 0.2vw; */
+       float: right;
+       margin-left: -30vw;
+       
+       /* margin: 0; */
+       padding: 0;
     }
     
 }
