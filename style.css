@@ -72,29 +72,44 @@
 */
 
 
-.h2_red {
+.h2_sec {
   margin-left: 30vw;
   width: 32vw;
   padding-left: 0.8vw;
-  border-left: 0.2vh solid #750303;
-  border-top: 0.2vh solid #750303;
+  border-left: 0.3vh groove #1c5c22;
+  border-top: 0.3vh groove #1c5c22;
+  border-radius: 0.3vw;
+  /* border-left: 0.2vh solid #452481;
+  border-top: 0.2vh solid #452481; */
+
+  /* border-left: 0.2vh solid #750303;
+  border-top: 0.2vh solid #750303; */
 }
 
-.h3_green {
+.h3_sec {
   /* margin-left: 30.5vw; */
   width: 32.5vw;
-  padding-left: 1.5vw;
-  
-  border-left: 0.2vh solid #1c5c22;
-  border-top: 0.2vh solid #1c5c22;
+  padding-left: 0.8vw;
+  /* border-left: 0.2vh solid #484a41;
+  border-top: 0.2vh solid #484a41; */
+
+  border-left: 0.3vh groove #452481;
+  border-top: 0.3vh groove #452481;
+  border-radius: 0.3vw;
+  /* border-left: 0.2vh solid #750303;
+  border-top: 0.2vh solid #750303; */
+
+  /* border-left: 0.2vh solid #1c5c22;
+  border-top: 0.2vh solid #1c5c22; */
 }
   
-.h5_yellow {
+.h5_sec {
   width: 32.5vw;
-  border-left: 0.2vh solid #484a41;
-  border-top: 0.2vh solid #484a41;
-  padding-left: 1.5vw;
-  padding-top: 2vh;
+  border-left: 0.3vh groove #484a41;
+  border-top: 0.3vh groove #484a41;
+  padding-left: 0.8vw;
+  padding-top: 1vh;
+  border-radius: 0.3vw;
 }
 /*
 ***************************************************

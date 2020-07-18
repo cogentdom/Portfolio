@@ -26,7 +26,7 @@
     margin-bottom: 2vh;
     padding-top: 2vh;
     font-size: x-large;
-    border-bottom:0.2vh solid #750303;
+    border-bottom: 0.3vh groove #1c5c22;
     width: 34vw;
   }
   
@@ -36,7 +36,7 @@
     right: 38vw;
     font-weight: bolder;
     /* color: #929292; */
-    border-bottom:0.2vh solid #1c5c22;
+    border-bottom: 0.3vh groove #452481;
     /* border-bottom-style: 10; */
     /* border-width: 10%; */
     width: 34vw;
@@ -52,14 +52,15 @@
     /* padding-top: 5vh; */
     /* margin-left: 30vw; */
     right: 38vw;
-    padding-bottom: 1vh;
+    /* padding-bottom: 4vh; */
     padding-top: 2vh;
-    
+    padding-bottom: 1vh;
     font-size: large;
     border-bottom:0.2vh solid #484a41;
     width: 34vw;
     font-style: italic;
     margin-bottom: 2vh;
+    
   }
   
   
@@ -128,7 +129,7 @@
   
   .textfield h4 {
     /* margin-left: 2vw; */
-    border-bottom:0.2vh solid #452481;
+    border-bottom:0.2vh solid #520303;
     width: 27vw;
     padding-bottom: 0.4vh;
     padding-top: 1vh;
