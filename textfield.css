@@ -78,7 +78,7 @@
 
   ol {
     /* margin-left: 33vw; */
-    padding-right: 35vw;
+    /* padding-right: 35vw; */
     padding-top: 2vh;
     padding-left: 2vw;
     font-size: normal;
@@ -87,7 +87,7 @@
   
   .list_unsorted {
     /* margin-left: 33vw; */
-    padding-right: 35vw;
+    /* padding-right: 35vw; */
     /* padding-top: 2vh; */
     padding-bottom: 1vh;
     font-size: normal;
@@ -97,7 +97,7 @@
   
   #list_sub {
     /* margin-left: 3vw; */
-    padding-right: 35vw;
+    /* padding-right: 35vw; */
     /* padding-top: 0.5vh; */
     padding-bottom: 0.5vh;
     font-size: normal;
@@ -186,20 +186,20 @@
     }
   }
 
-  @media only screen and (max-width: 4in) {
+  @media only screen and (max-width: 6in) {
     .textfield h2 {
       padding: 0;
       margin: 0;
       margin-left: 5vw;
       /* left: 1vw; */
       /* float: left; */
-      right: 100vw;
-      width: 85vw;
+      /* right: 100vw; */
+      width: 75vw;
       /* z-index: 1; */
       /* position: relative; */
     }
     .textfield h3 {
-      width: 82vw; 
+      width: 75vw; 
     }
     .textfield h5 {
       width: 78vw; 
@@ -215,7 +215,7 @@
       width: 65vw;
     }
     .text_img {
-      width: 80vw;
+      width: 60vw;
     }
     #list_sub li {
       width: 65vw;
