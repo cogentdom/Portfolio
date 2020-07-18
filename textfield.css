@@ -32,7 +32,7 @@
   
   .textfield h3 {
     /* padding-top: 5vh; */
-    margin-left: 30vw;
+    /* margin-left: 30vw; */
     right: 38vw;
     font-weight: bolder;
     /* color: #929292; */
@@ -42,39 +42,32 @@
     width: 34vw;
     padding-bottom: 1vh;
     font-size: x-large;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
   }
   
-  h4_body {
-    /* padding-top: 5vh; */
-    margin-left: 30vw;
-    right: 38vw;
-    font-weight: bolder;
-    /* color: #929292; */
-    border-bottom:0.2vh solid #0b1947;
-    /* border-bottom-style: 10; */
-    /* border-width: 10%; */
-    width: 34vw;
-    padding-bottom: 1vh;
-    font-size: x-large;
-  }
+ 
 
   .textfield h5 {
     /* padding-top: 5vh; */
-    margin-left: 30vw;
+    /* margin-left: 30vw; */
     right: 38vw;
     padding-bottom: 1vh;
     padding-top: 2vh;
+    
     font-size: large;
     border-bottom:0.2vh solid #484a41;
     width: 34vw;
     font-style: italic;
+    margin-bottom: 2vh;
   }
   
   
   
   .textfield p {
-    margin-left: 30vw;
-    padding-right: 35vw;
+    /* margin-left: 30vw; */
+
+    /* padding-right: 35vw; */
     padding-top: 3vh;
     padding-bottom: 3vh;
     font-size: normal;
@@ -83,19 +76,22 @@
   }
 
   ol {
-    margin-left: 33vw;
+    /* margin-left: 33vw; */
     padding-right: 35vw;
     padding-top: 2vh;
-    
+    padding-left: 2vw;
     font-size: normal;
+    width: 27vw;
   }
   
   .list_unsorted {
-    margin-left: 33vw;
+    /* margin-left: 33vw; */
     padding-right: 35vw;
-    padding-top: 2vh;
+    /* padding-top: 2vh; */
     padding-bottom: 1vh;
     font-size: normal;
+    width: 27vw;
+    padding-left: 2vw;
   }
   
   #list_sub {
@@ -131,7 +127,7 @@
   }
   
   .textfield h4 {
-    margin-left: -2vw;
+    /* margin-left: 2vw; */
     border-bottom:0.2vh solid #452481;
     width: 27vw;
     padding-bottom: 0.4vh;
@@ -140,7 +136,7 @@
   }
 
   #list_sub_title {
-    width: 10vw;
+    width: 12vw;
     margin-left: 0.5vw;
     font-size: normal;
   }
