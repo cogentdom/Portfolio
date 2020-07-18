@@ -14,7 +14,7 @@
     height: 10vh;
     background-color: #252a34;
     display: grid;
-    grid-template-columns: 70% 1fr 1fr;
+    grid-template-columns: 60% 20% 1fr 1fr;
     border-bottom: 0.3vh groove #453d0c;
     
 }
@@ -28,7 +28,7 @@
   text-align: left;
   display: inline-flex;
   /* align-items: ; */
-  white-space: wrap;
+  white-space: pre-wrap;
 }
 
 .title h1 {
@@ -120,6 +120,9 @@
 }
 
 @media only screen and (max-width: 8in) {
+  .header {
+    height: 15vh;
+  }
   .title {
     display: inline-block;
     /* grid-template-rows: 1fr 1fr; */
@@ -134,6 +137,7 @@
   .navbar a {
     font-size: x-large;
     padding-left: 1vh;
+    padding-right: 1vh;
   }
   .header {
     grid-template-columns: 70% 1fr 1fr;
