@@ -224,7 +224,7 @@
     
   }
   .navbar a {
-    /* margin-bottom: 4vh; */
+    border: 0.4vh groove #453d0c;
   }
 /* .h3_sec {
   width: 63vw; 
