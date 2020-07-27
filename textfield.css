@@ -29,7 +29,7 @@
     /* border-bottom: 0.3vh groove #450c0c;   Red */
     /* border-bottom: 0.3vh groove #999898;   White */
     /* border-bottom: 0.3vh groove #1c5c22;   Old Green */
-    border-bottom: 0.5vh groove #304b24;
+    border-bottom: 0.4vh groove #304b24;
     width: 34vw;
     text-indent: 1vw;
   }
@@ -40,7 +40,7 @@
     right: 38vw;
     font-weight: bolder;
     /* border-bottom: 0.3vh groove #1c5c22;   Green */
-    border-bottom: 0.3vh groove #696868;
+    border-bottom: 0.4vh groove #696868;
     /* border-bottom-style: 10; */
     /* border-width: 10%; */
     width: 33.2vw;
@@ -63,7 +63,9 @@
     font-size: large;
     /* border-bottom: 0.3vh groove #452481;  Purple */
     /* border-bottom: 0.3vh groove #453d0c;  Tan */
-    border-bottom: 0.3vh groove #3b0a0a;
+
+    /* border-bottom: 0.3vh groove #3b0a0a; */
+    border-bottom: 0.4vh groove #450c0c;
     width: 32.4vw;
     font-style: italic;
     margin-bottom: 2vh;
