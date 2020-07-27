@@ -83,7 +83,7 @@
 @media only screen and (max-width: 10in) {
   .awards {
     
-    grid-template-columns: 1fr 1.6fr;
+    grid-template-columns: 1fr 1.2fr;
   }
 }
 
