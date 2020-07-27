@@ -91,7 +91,7 @@
     padding-bottom: 3vh;
     font-size: normal;
     color: #e2e2e2;
-    font-weight: lighter;
+    /* font-weight: lighter; */
   }
 
   ol {

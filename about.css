@@ -5,14 +5,9 @@
 
 #textfield_about {
   height: auto;
-  /* border-top:0.2vh groove #484a41 */
+  /* background-color: #252a34; */
 }
 
-/* @media only screen and (max-width: 8in) {
-  #textfield_about {
-    height: 580vh;
-  }
-} */
 
 #employer {
   margin-top: -2vh;
