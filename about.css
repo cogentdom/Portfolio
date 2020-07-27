@@ -82,8 +82,21 @@
 
 @media only screen and (max-width: 10in) {
   .awards {
-    
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1fr 1.6fr;
+  }
+  /* .awards p {
+    font-size: 60%;
+  } */
+}
+
+@media only screen and (max-width: 6in) {
+  .awards {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
+@media only screen and (max-width: 4in) {
+  .awards p {
+    font-size: 86%;
+  }
+}
