@@ -234,14 +234,17 @@
     padding-right: 1vw;
   }
   .h2_sec {
-    margin-left: 5vw;
+    margin-left: 2vw;
     width: 83vw;
+    padding-left: 2vw;
   }
   .h3_sec {
     width: 82.6vw; 
+    padding-left: 2vw;
   }
   .h5_sec {
-    width: 81vw; 
+    width: 81vw;
+    padding-left: 2vw; 
   }
 
   .navbar {
