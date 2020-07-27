@@ -26,7 +26,9 @@
     margin-bottom: 2vh;
     padding-top: 2vh;
     font-size: x-large;
-    border-bottom: 0.3vh groove #450c0c;
+    /* border-bottom: 0.3vh groove #450c0c;   Red */
+    /* border-bottom: 0.3vh groove #999898;   White */
+    border-bottom: 0.3vh groove #1c5c22;
     width: 34vw;
     text-indent: 1vw;
   }
@@ -36,8 +38,8 @@
     /* margin-left: 30vw; */
     right: 38vw;
     font-weight: bolder;
-    /* color: #929292; */
-    border-bottom: 0.3vh groove #1c5c22;
+    /* border-bottom: 0.3vh groove #1c5c22;   Green */
+    border-bottom: 0.3vh groove #999898;
     /* border-bottom-style: 10; */
     /* border-width: 10%; */
     width: 33.2vw;
@@ -58,14 +60,27 @@
     padding-top: 2vh;
     padding-bottom: 1vh;
     font-size: large;
-    border-bottom: 0.3vh groove #452481;
+    /* border-bottom: 0.3vh groove #452481;  Purple */
+    /* border-bottom: 0.3vh groove #453d0c;  Tan */
+    border-bottom: 0.3vh groove #450c0c;
     width: 32.4vw;
     font-style: italic;
     margin-bottom: 2vh;
     text-indent: 1vw;
   }
   
-  
+  .textfield h4 {
+    /* margin-left: 2vw; */
+    /* border-bottom: 0.3vh groove #453d0c; */ /*tan*/
+    /* border-bottom: 0.3vh groove #452481; Purple */
+    border-bottom: 0.3vh inset #11111f;
+    width: 27vw;
+    padding-bottom: 0.4vh;
+    padding-top: 1vh;
+    margin-bottom: 1vh;
+    /* display: inline-block;
+    vertical-align: top; */
+  }
   
   .textfield p {
     /* margin-left: 30vw; */
@@ -130,21 +145,13 @@
     margin-left: 1vw;
   }
   
-  .textfield h4 {
-    /* margin-left: 2vw; */
-    border-bottom: 0.3vh groove #453d0c;
-    width: 27vw;
-    padding-bottom: 0.4vh;
-    padding-top: 1vh;
-    margin-bottom: 1vh;
-    
-  }
+
 
   #list_sub_title {
     width: 12vw;
     margin-left: 2vw;
     font-size: normal;
-    text-indent: 1vw;
+    text-indent: 1vw hanging each-line;
   }
   /*
    *************
