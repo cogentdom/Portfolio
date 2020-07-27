@@ -28,7 +28,7 @@
   color: #ffffff;
   height: 100vh;
   display: grid;
-  grid-template-rows: 8fr 1.5fr 0.7fr 8fr;
+  grid-template-rows: 11fr 1.5fr 0.7fr 12fr;
 }
 
 .headerArt h1 {
@@ -45,16 +45,9 @@
 }
 
 .headerArt p {
-  /* display: inline-flex; */
-  /* position: start; */
   margin-left: 28vw;
-  /* right: 30%; */
   font-size: 150%;
   opacity: 0.8;
-  /* font-weight: 700; */
-  /* margin-top: -20vh; */
-  /* text-indent: 15%; */
-  /* text-decoration: underline; */
   white-space: nowrap;
 }
 
@@ -65,11 +58,7 @@
 
 }
 
- @media only screen and (max-width: 4in) {
-   .headerArt p {
-    margin-top: 0.5vh;
-    width: 70vw;
-   }
+ @media only screen and (max-width: 6in) {
    .headerArt h1 {
     font-size: 300%;
     margin-left: 7vw;

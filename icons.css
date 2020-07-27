@@ -20,8 +20,8 @@
     margin-top: 7vh;
     float: left;
     /* border: 0.3vh groove #453d0c; */
-    border: 0.3vh groove #999898; /* White */
-    /* border: 0.3vh inset #11111f;  Black */
+    border: 0.3vh groove #696868; 
+    
     border-radius: 1vh;
     padding-top: 2vh;
     padding-bottom: 1vh;
@@ -47,10 +47,9 @@
     background: #252a34;
     border-radius: 1vh;
     /* border: 0.3vh groove #453d0c;  /* Red */
-   border: 0.3vh groove #999898;   
-    /* border: 0.3vh groove #1c5c22; /* Green */
-    /* border: 0.3vh groove #4a4a4b; */
-    /* border: 0.3vh inset #11111f */
+   /* border: 0.3vh groove #999898;    */
+    border: 0.4vh groove #696868; 
+
 }
 
 

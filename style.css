@@ -68,7 +68,8 @@
   /* padding-right: 0.5vw;
   padding-left: 0.5vw; */
   padding: 0.5vw;
-  border: 0.3vh groove #999898;
+  /* border: 0.3vh groove #999898; */
+  border: 0.4vh groove #304b24;
   border-radius: 25px;
   /* background-color: #453d0c6c; */
   background-color: rgb(29, 36, 49);
@@ -97,9 +98,9 @@
 */
 .body {
   /* border-top: 0.4vh groove #453d0c;  Tan */
-  /* border-top: 0.4vh groove #1c5c22;  Green */ 
+  /* border: 0.5vh groove #304b24;   Green */
   /* border-top: 0.4vh groove #450c0c;  Red */
-  border-top: 0.4vh groove #999898;  /* White */
+  border-top: 0.4vh groove #304b24;  /* White */
 }
 
 .h2_sec {
@@ -109,8 +110,10 @@
   /* border-left: 0.4vh groove #999898;  White
   border-top: 0.4vh groove #999898; */
 
-  border-left: 0.4vh groove #1c5c22;
-  border-top: 0.4vh groove #1c5c22;
+  /* border-left: 0.4vh groove #1c5c22; old green
+  border-top: 0.4vh groove #1c5c22; */
+  border-left: 0.5vh groove #304b24;
+  border-top: 0.5vh groove #304b24;
   
   border-radius: 0.5vw;
   /* border-left: 0.2vh solid #452481;  Purple
@@ -135,8 +138,8 @@
   /* border-left: 0.2vh solid #450c0c;  Red
   border-top: 0.2vh solid #450c0c; */
 
-  border-left: 0.4vh groove #999898;
-  border-top: 0.4vh groove #999898;
+  border-left: 0.4vh groove #696868;
+  border-top: 0.4vh groove #696868;
 }
   
 .h5_sec {
@@ -146,8 +149,10 @@
   /* border-left: 0.4vh groove #453d0c;  Tan
   border-top: 0.4vh groove #453d0c; */
 
-  border-left: 0.4vh groove #450c0c;
-  border-top: 0.4vh groove #450c0c;
+  /* border-left: 0.4vh groove #450c0c;  Old Red
+  border-top: 0.4vh groove #450c0c; */
+  border-left: 0.4vh groove #3b0a0a;
+  border-top: 0.4vh groove #3b0a0a;
   padding-left: 0.8vw;
   padding-top: 1vh;
   border-radius: 0.5vw;
@@ -173,7 +178,7 @@
     
   }
   .navbar a {
-    font-size: x-large;
+    font-size: large;
     padding-left: 1vh;
     padding-right: 1vh;
   }
@@ -201,6 +206,7 @@
   }
   #header_title {
     font-size: larger;
+    
   }
   .header {
     grid-template-columns: 45% 1fr 1fr;
@@ -232,7 +238,7 @@
     
   }
   .navbar a {
-    border: 0.4vh groove #999898;
+    /* border: 0.4vh groove #999898; */
     font-size: large;
   }
 /* .h3_sec {
