@@ -21,18 +21,19 @@
   display: flex;
   align-items: center;
   
-  text-align: right;
+  /* text-align: right; */
   /*text-align: left;*/
   background-image: url('image_files/foggy_forest.jpg');
   background-size: cover;
   color: #ffffff;
   height: 100vh;
   display: grid;
-  grid-template-rows: 50vh 3vh 1fr 33vh;
+  grid-template-rows: 8fr 1.5fr 0.7fr 8fr;
 }
 
 .headerArt h1 {
-    margin-right: 45%;
+    /* margin-right: 45%; */
+    margin-left: 20vw;
     font-size: 400%;
     font-weight: 700;
     /* margin-top: -15%; */
@@ -40,12 +41,13 @@
     /* text-indent: 15%; */
     text-decoration: underline;
     white-space: nowrap;
+    /* width: 20vw; */
 }
 
 .headerArt p {
   /* display: inline-flex; */
   /* position: start; */
-  margin-right: 45%;
+  margin-left: 28vw;
   /* right: 30%; */
   font-size: 150%;
   opacity: 0.8;
@@ -60,7 +62,7 @@
   .headerArt p {
    /* margin-top: 2vh; */
   }
- 
+
 }
 
  @media only screen and (max-width: 4in) {
@@ -68,7 +70,14 @@
     margin-top: 0.5vh;
     width: 70vw;
    }
-  
+   .headerArt h1 {
+    font-size: 300%;
+    margin-left: 7vw;
+  }
+  .headerArt p {
+    font-size: 130%;
+    margin-left: 18vw;
+  }
  }
 
 .body {

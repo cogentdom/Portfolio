@@ -232,7 +232,8 @@
     
   }
   .navbar a {
-    border: 0.4vh groove #453d0c;
+    border: 0.4vh groove #999898;
+    font-size: large;
   }
 /* .h3_sec {
   width: 63vw; 
