@@ -162,10 +162,10 @@
   /* border-left: 0.4vh groove #453d0c;  Tan
   border-top: 0.4vh groove #453d0c; */
 
-  /* border-left: 0.4vh groove #450c0c;  Old Red
-  border-top: 0.4vh groove #450c0c; */
-  border-left: 0.4vh groove #3b0a0a;
-  border-top: 0.4vh groove #3b0a0a;
+  border-left: 0.4vh groove #450c0c;  
+  border-top: 0.4vh groove #450c0c;
+  /* border-left: 0.4vh groove #3b0a0a;
+  border-top: 0.4vh groove #3b0a0a; */
   padding-left: 0.8vw;
   padding-top: 1vh;
   border-radius: 0.5vw;
