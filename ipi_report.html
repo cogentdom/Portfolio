@@ -18,12 +18,14 @@
     <link href="ipi_report.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Strip -->
     <div class="header">
         <div class="title">
             <h1>Porting Data  | |  </h1><h1 id="header_title">Idaho Policy Institute Report</h1>
         </div>
         <div></div>
         <div>
+            <!-- Navigation Bar -->
             <nav class="navbar">            
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -35,6 +37,7 @@
 
     
     <section class="body">
+        <!-- Icon Sidebar -->
         <div id="icons">
             <div class="row">
               <h4>Dominik Huffield</h4>
@@ -54,14 +57,14 @@
         </div>
 
         <div id="textfield_ipi" class="textfield">
-            <!-- Introduction -->
+            <!-- Financial Spending Model -->
             <h2 id="h2_small">Financial Spending Model</h2>
             
             <section id="sec_small" class="h2_sec">
                 <p>A three month service learning project for the Idaho Policy Institute(IPI); this is a project I completed for my graduate data science course at Boise State. This Project successfully makes use of Idaho's municipal government financial data by providing insightful models to augment the decision making process. This specifically correlates government expenditure and crime allowing for the optimization of all future investments. </p>     
                 <p>View the <a href="https://github.com/Chief-Dom/Graduate-Data-Science-Final" target="_blank" style="color: #3366cc;">Project Repository</a> for a deeper dive into the code</p>
                 
-
+                <!-- Meeting the Client -->
                 <h3>Meeting the Client:</h3>
                 <section class="h3_sec">
                     <p>Dr. Cheong Kim from the Idaho Policy Institute has assembled a file containing data on finances, population, and crime for virtually every city in Idaho. Dr. Kim and his colleagues are social scientists performing research to assist decision makers in answering the difficult decisions of the day, and helps state and local government leaders navigate change and forge strong directions for a better Idaho.  </p>
@@ -70,10 +73,13 @@
                         <p>With the desire to augment the decision making process for state and local government bodies, Dr. Kim sought to improve the investment process of government funds. It was asked that my team and I identify expenditure trends relation to various crime statistics. In doing so these decison makers would have a more optimized ability to allocate resources. </p>
                     </section>
                 </section>
+                <!-- Initial Database -->
                 <h3>Initial Database</h3>
                 <section class="h3_sec">
+                    <!-- Database Overview -->
                     <h5>Database Overview</h5>
                     <section class="h5_sec">
+                        <!-- Idaho Municipal Databes -->
                         <ul class="list_unsorted">
                             <h4>Idaho Municipal Database</h4>
                             <li style="font-weight: lighter;">Scope: municipalities in Idaho, 1995 - 2014/5</li>
@@ -87,6 +93,7 @@
                         <img class="text_img" src="image_files/city_b.png">
                         <img class="text_img" src="image_files/city_c.png">
                     
+                        <!-- Idaho County Database -->
                         <ul class="list_unsorted">
                             <h4>Idaho County Database</h4>
                             <li style="font-weight: lighter;">Scope: counties in Idaho, 1995-2015/6</li>
@@ -100,7 +107,7 @@
                         <img class="text_img" src="image_files/county_a.png">
                         <img class="text_img" src="image_files/county_b.png">
 
-
+                        <!-- Government Fimnance Database -->
                         <ul class="list_unsorted">
                             <h4>Government Finance Database</h4>
                             <li style="font-weight: lighter;">Idaho Municipal/County Databases: Fiscal variables for Idaho derived from
@@ -149,6 +156,7 @@
                         <p>Each of these 618 varaibales were encoded and required a manual to understand what was being represented. I am unfortunatly not at liberty to present this manual at this time however, I will fully describe all variables used in this documentation.</p>
                     </section>
 
+                    <!-- Importing Scrapped Data -->
                     <h5>Importing new Data</h5>
                     <section class="h5_sec">
                         <p>The provided dataset contained a lot of missing values so we felt it important to add more features that possessed every data point. This was tricky because not only did we have to load data but we had to do it to every csv. To solve this we made a backend funtion that combined all of the csv files into one. After importing we merged these tables with the one provided by IPI, or in one case made an additional table. Listed below are all additional sources.</p>
@@ -166,6 +174,8 @@
                         <p></p>
                     </section>
                 </section>
+
+                <!-- Backend Functions -->
                 <h3>Backend Functions We Created</h3>
                 <section class="h3_sec">
                     <p>
@@ -194,45 +204,82 @@
 
 
                 <!-- Data Exploration -->
-                <h3>Data Exploratory:</h3>
+                <h3>Data Exploratory & Cleansing:</h3>
                 <section class="h3_sec">
                     <p>
                         Once we had a base understanding of the database it was time to get hands on with the data. 
                         Quickly it became apparent that most of the described values were missing.
                         With concerns of removing valuable insights, there were enough missing values that dropping rows, columns nor setting thresholds provided solutions.
-                        <h4 id="list_sub_title" style="margin-top: -2vh; margin-bottom: 2vh; margin-left: 8vw;"></h4>
+                    </p>
+                    <p>
                         We then began to sort our variables trying to find columns with the least missing values.
                         Using the sorted list we identfied some values we believed to be essential in describing the required objective.
-                        Using the essential fields containing few missing values, we began to look for a pattern.   
-                        <h4 id="list_sub_title" style="margin-bottom: 2vh; margin-left: 8vw;"></h4>
+                        Using the essential fields containing few missing values, we began to look for a pattern. 
+                    </p>  
+                    <p>
                         Since we are dealing with data having time series attributes, we need balance in our data from year to year. 
                         Below is a plot showing the quantity of populated values over each year.
-
                     </p>
 
                     <img class="text_img" src="./image_files/data_densities.png">
 
                     <p>
                         Shown from this graph it is clear that our data has consistency with 5 year intervals. 
-                        This specific plot only represents population but we found this pattern to be consistent across most variables. 
+                        This specific plot only represents population but we found this pattern to be consistent across most variables.
                     </p>
-                    <p>
-                        Cities
-                    </p>
+                    <h5>Dimensionality Reduction</h5>  
+                    <section class="h5_sec"> 
+                        <p>    
+                            Using this information we will drop data for every year except for 1997, 2002, 2007 & 2012. 
+                        </p>
+                        <p>
+                            Other than the time series we also had an axis for cities/counties. 
+                            There were many cities with very little data so we concluded that those cities should be removed. 
+                            To do so we dropped any city that did not contain data for the four years we intended to use in our model.
+                            Doing so put our set at 59 of the original 200 cities. 
+                            This reduction was justified because the cities that were dropped contained such little data there was likely no useful insight.
+                            Similiarly counties had about 10% the amount of data as cities so we ultimatley chose to only pursue cities.
+                        </p>
+                        <p>
+                            We have greatly improved the usefulness of our data however we still have many variables missing large amounts of data. 
+                            To maintain further integrity we chose to drop all fields that do not have a populous of at least 87%.
+                            This ratio was chosen to mitigate interpolation while maintaining most fields. 
+                        </p>
+                    </section> 
                 </section>
 
+                <!-- Model Objectives -->
                 <h3>Objectives for our Models</h3>
                 <section class="h3_sec">
-                    <p>The amount of columns contained within the set describing crime amounted to 7 however there were over 500 variables describing financial revenue or expenditure. Using this knowledge we thought it best to attempt to describe crime using financial information as our independent variables (along with additional information). We chose to do this so that we would not limit the features available for our models along with the ability of this type of model to provide a good description of the relation between government finances and crime. The variables describing crime were quantities of occurances so to use this as our dependent variable we needed to construct a regression model.
-                        A future iteration of this project one might create a classifier that describes whether an increase or decrease in a feature will result in an increase or decease in crime. We do not address this effect of each feature directly to our dependent as to avoid feature phishing.</p>
-                    <h5>Selecting a Model</h5>
+                    <p>
+                        The amount of columns contained within the set describing crime amounted to 7 however there were over 500 variables describing financial revenue or expenditure. 
+                        Using this knowledge we thought it best to attempt to describe crime using financial information as our independent variables (along with additional misc. data). 
+                        We chose to do this so that we would not limit the features available for our models along with the ability of this type of model to provide a good description of the relation between government finances and crime. 
+                        The variables describing crime were quantities of occurances so to use this as our dependent variable we needed to construct a regression model.
+                    </p>
+                    <h5>Selecting the OLS Time Fixed Effects Model</h5>
                     <section class="h5_sec">
-                        <p>Since this a panel dataset we wanted to account for the serial correlation resulting from the time series. Additionally we thought a linear model the easiest to interpret and understand the inner workings of the data itself. This lead us to a time effects model for our initial build, however the world is not linear and features will likely contain heteroskedasticity so past comprehension a non-linear approach will likely be a more robust and accurate model.</p>
+                        <p>
+                            Since this a panel dataset we wanted to account for the serial correlation resulting from the time series. 
+                            Additionally we thought a linear model the easiest to interpret and understand the inner workings of the data itself. 
+                            This lead us to a time effects model for our initial build, 
+                            however the world is not linear and features will likely contain heteroskedasticity so we will need to test for this using the Breusch-Pagan Test.
+                            If the tests yield results suggesting a linear model to be biased we will move forward with a non-linear approach.
+                        </p>
+                        <p>
+                            After evaluating many models I concluded that an OLS Time Fixed Effects model was the best approach. 
+                            This was done because it would account for serial correlation and provide a regression summary without additional code.
+                            Additionally this could be used as a base model with a short build time, allowing for better allocation of time spent developing.
+                        </p>
                     </section>
                 </section>
 
+                <!-- OLS Assumtions -->
                 <h3>What is OLS and it's Assumptions</h3>
                 <section class="h3_sec">
+                    <p>
+                        The OLS approach to regression is unbiased therefor making it reliable for analysis, however our data has to meet some conditions refered to as assumptions.  
+                    </p>
                     <ul class="list_unsorted">
                         <h4>Least Squares Assumptions</h4>
                         <li>Error has a Conditional Mean Zero</li>
@@ -246,16 +293,27 @@
                     </ul>
                 </section>
 
+                <!-- Testing Data to meet Assumptions -->
+                    <!-- Outliers -->
+                    <!-- Homoskedastic -->
+
                 <!-- Data Cleansing and Interpolation -->
-                <h3>Preprossesing</h3>
+                <h3>Interpolation</h3>
                 <section class="h3_sec">
                     <h5>Train Validation Test Split</h5>
                     <section class="h5_sec">
-                        <p></p>
+                        <p>
+                            First Let us split the data using 25% for our test set and the remaining for training.
+                            Since we do not want to perform interpolation on our test set we will drop all null records and set this set aside.
+                        </p>
                     </section>
                     <h5>Interpolation</h5>
                     <section class="h5_sec">
-                        <p></p>
+                        <p>
+                            Finally we have reached the final data set that we intend to input into our models.
+                            This input data is increadibly important and is the driving force of our models.
+                            Knowing the usefulness of every data point we will perform a simple linear interpolation on our points to predict the missing values with a relatively low varrience. 
+                        </p>
                     </section>
                 </section>
 
@@ -281,6 +339,8 @@
                         <p></p>
                     </section>
                 </section>
+
+
                 <!-- Analysis of Regression -->
                 <h3>OLS Time Effects Regression Model</h3>
                 <section class="h3_sec">
@@ -308,6 +368,7 @@
 
                     </section>
                 </section>
+
                 <!-- Identify Davids (linkedin) 4 features for having made an impact-->
                 
                 <!-- Conclusions and what to do from here-->
