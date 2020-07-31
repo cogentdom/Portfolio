@@ -200,10 +200,22 @@
                         Once we had a base understanding of the database it was time to get hands on with the data. 
                         Quickly it became apparent that most of the described values were missing.
                         With concerns of removing valuable insights, there were enough missing values that dropping rows, columns nor setting thresholds provided solutions.
+                        <h4 id="list_sub_title" style="margin-top: -2vh; margin-bottom: 2vh; margin-left: 8vw;"></h4>
+                        We then began to sort our variables trying to find columns with the least missing values.
+                        Using the sorted list we identfied some values we believed to be essential in describing the required objective.
+                        Using the essential fields containing few missing values, we began to look for a pattern.   
+                        <h4 id="list_sub_title" style="margin-bottom: 2vh; margin-left: 8vw;"></h4>
+                        Since we are dealing with data having time series attributes, we need balance in our data from year to year. 
+                        Below is a plot showing the quantity of populated values over each year.
 
-                        
                     </p>
+                    
                     <img class="text_img" src="./image_files/data_densities.png">
+
+                    <p>
+                        Shown from this graph it is clear that our data has consistency with 5 year intervals. 
+                        This specific plot only represents population but we found this pattern to be consistent across most variables. 
+                    </p>
                 </section>
 
                 <h3>Objectives for our Models</h3>
