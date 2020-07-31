@@ -375,30 +375,58 @@
                         
                         <img class="text_img" src="image_files/regress_summary.png">
                         <p>
-                            This model appears to be a good representation of the data. From this we can see that Population, Total_CashSecurities, Nonin_Trust_CashSec, Total_Expenditure, ect. all are largly statistically significant in identifying Total Theft 
-                            Population and Total Expenditure seem to be accurate in describing Total Theft with low standard errors. This makes logical sense in that the more people in an area the more crime. Oth_Nonin_Fd_CashSec, Tot_Chgs_and_Misc_Rev and Nonin_TrustCashSec also have low std. errors.
-                            Our final P-value appears to be statistically significant so lets use our test data to see how it performs with unseen data.
+                            From here this model appears to be a good representation of our data.
+                            Using this summary our P-value is 0.0000 which is great for now, but later we will need to re-evaluate this number with unseen data.
+                            In addition to being statistically significant we also have an R Squared value of 0.9019, so we should be able to say that the model is a good description of the data.
                         </p>
+                        <!-- Run an F-Test using F distro. -->
+                        <!-- Evaluate log likelihood -->
 
                     </section>
                 
                     <h5>Identifying the Correlation</h5>
                     <section class="h5_sec">
                 
-                        <p>Nice correlation but lets avoid phishing</p>
                         <img class="text_img" src="image_files/regress_correlation.png">
                         
-                        <p></p>
+                        <!-- Evaluate F-test Results -->
+                        <p>
+                            This model appears to be a good representation of the data, however our first 6 regressors are all similiar and provide little insight.
+                            The reason for this limited insight is due to the fact that as cities grow in size they will have more revenue and therfor expenditure.
+                            Crime is highly correlated to population renduring little insight from these variables, however it does show that our model is working logically. 
+                        </p>
+                        <!-- The Signal -->
+                        <h4>The Signal within the Noise</h4>
+                        
+                            <p>
+                                The real insight come from the regressor Total_LTD_Out (Total Long Term Outstanding Debt). 
+                                A closer look at this regressor shows that it is the most statistically significant with a P-value of 0.0000 and has the lowest varrience with a standard error of 0.0025.
+                                With the ultimate objective of efficiently reducing crime this regressor shows promise towards an effective strategy to do so.
+                                By validating the correlation between long term debt and total theft for cities in Idaho, decision makers are now able to better invest resources when combatting theft.  
+                            </p>
 
                     </section>
                 </section>
 
                 <!-- Identify Davids (linkedin) 4 features for having made an impact-->
                 
-                <!-- Conclusions and what to do from here-->
-                <h5 >Causal Inference</h5>
+                <!-- Conclusions -->
+                <h5>Conclusions</h5>
                 <section class="h5_sec">
-                    <p></p>
+
+                    <p>
+                        I was provided a database comprised of financial expenditure/revenue and crime for various cities in Idaho. 
+                        My client, the Idaho Policy Institute, desired to know how better to allocate resources to better reduce crime. 
+                        Throughout my analysis I found the data to contain missing values, was unbalance along the temporal axis and was overall sparse. 
+                        However, after some data scrapping, dimensionality reduction and minimal interpolation; I was successful in cleaning the data having greatly reduced the noise. 
+                        I then used a non biased OLS time fixed effects regression model to further understand the data. Having made a statistically significant and reliable model I was able to draw a clear insight. 
+                        Many of the features were that of general/overall expenditure and revenue, thus were not only largely correlated to crime but also population. 
+                        This is difficult because logically, more people means more total crime even if the rates are identical. 
+                        Taking another look at the model I then noticed that the most statistically significant feature (by a large margin) was that of "long term outstanding debt." 
+                        The correlation between long term debt of a city and the associated crime provided invaluable insight towards the client's desired objective, reducing crime. 
+                        Using this information government bodies are better able to allocate resources; by removing the "pigeon superstition" associated to investing funds, my analysis saved local governments thousands of dollars.
+                    </p>
+
                 </section>
             </section>   
             <p></p>
