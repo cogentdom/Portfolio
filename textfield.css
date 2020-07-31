@@ -87,7 +87,7 @@
   
   .textfield p {
     /* margin-left: 30vw; */
-
+    font-weight: lighter;
     /* padding-right: 35vw; */
     padding-top: 1.5vh;
     padding-bottom: 3vh;
