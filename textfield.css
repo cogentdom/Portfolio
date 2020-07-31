@@ -93,9 +93,9 @@
     color: #e2e2e2;
   }
 
-  .textfield li {
+  /* .textfield li {
     font-weight: lighter;
-  }
+  } */
 
   #no_weight {
     font-weight: normal;
@@ -108,6 +108,7 @@
     margin-left: 2vw;
     font-size: normal;
     width: 27vw;
+    font-weight: lighter;
   }
   
   .list_unsorted {
@@ -118,6 +119,7 @@
     font-size: normal;
     width: 27vw;
     /* padding-left: 2vw; */
+    font-weight: lighter;
   }
   
   #list_sub {
@@ -128,6 +130,7 @@
     font-size: normal;
     width: 30vw;
     margin-left: 2vw;
+    font-weight: lighter;
   }
   .list_unsorted li {
     padding-bottom: 0.5vh;
