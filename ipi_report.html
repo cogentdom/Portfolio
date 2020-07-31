@@ -248,6 +248,26 @@
                     </section> 
                 </section>
 
+                <!-- Finishing Preprocessing for Interpolation -->
+                <h3> Finishing Preprocessing</h3>
+                <section class="h3_sec">
+                    <h5>Train Validation Test Split</h5>
+                    <section class="h5_sec">
+                        <p>
+                            First Let us split the data using 25% for our test set and the remaining for training.
+                            Since we do not want to perform interpolation on our test set we will drop all null records and set this set aside.
+                        </p>
+                    </section>
+                    <h5>Interpolation</h5>
+                    <section class="h5_sec">
+                        <p>
+                            Finally we have reached the final data set that we intend to input into our models.
+                            This input data is increadibly important and is the driving force of our models.
+                            Knowing the usefulness of every data point we will perform a simple linear interpolation on our points to predict the missing values with a relatively low varrience. 
+                        </p>
+                    </section>
+                </section>
+
                 <!-- Model Objectives -->
                 <h3>Objectives for our Models</h3>
                 <section class="h3_sec">
@@ -297,64 +317,68 @@
                     <!-- Outliers -->
                     <!-- Homoskedastic -->
 
-                <!-- Data Cleansing and Interpolation -->
-                <h3>Interpolation</h3>
+
+                <!-- Validating that OLS is BLUE -->
+                <h3>Validating that OLS is BLUE</h3>
                 <section class="h3_sec">
-                    <h5>Train Validation Test Split</h5>
+                    <p>
+                        Refering to the OLS assumptions listed above we need to test our data to make sure all of the assumptions are true.
+                        If the assumptions are true about our data then it is said Ordinary Least Squares (OLS) is the Best Linear Unbiased Estimate (BLUE).
+                        If these assumptions are not true about our data then this approach will be biased and we will nedd to use a different approach. 
+                    </p>
+
+                    <!-- Hyperparameter -->
+                    <h5>First a quick Hyperparameter</h5>
                     <section class="h5_sec">
                         <p>
-                            First Let us split the data using 25% for our test set and the remaining for training.
-                            Since we do not want to perform interpolation on our test set we will drop all null records and set this set aside.
+                            In the next step we wish to test for independance accross our features utilizing the SelectKBest function within Scikit-Learn's library. 
+                            To do this we must tell the function a value for K, representing the amount of features desired.
+                            Putting a random number is not overly effective so we will attempt to optimize K by using a Lasso regression.
+                            This regression works by reducing the coefficient of features to zero if they are not usful to the model.
+                            Using this we will simply set K to equal the number of regressors from the Lasso.
                         </p>
                     </section>
-                    <h5>Interpolation</h5>
-                    <section class="h5_sec">
-                        <p>
-                            Finally we have reached the final data set that we intend to input into our models.
-                            This input data is increadibly important and is the driving force of our models.
-                            Knowing the usefulness of every data point we will perform a simple linear interpolation on our points to predict the missing values with a relatively low varrience. 
-                        </p>
-                    </section>
-                </section>
 
-                <!-- Constructing Models -->
-                <h3>Solving for some Hyperparameters</h3>
-                <section class="h3_sec">
-                    <p></p>
-                </section>
-
-                <h3>Safegaurding against Omitted Variable Bias</h3>
-                <section class="h3_sec">
-                    <h5>Lasso</h5>
-                    <section class="h5_sec">
-                        <p></p>
-                    </section>
+                    <!-- Chi Squared Test -->
                     <h5>Chi Squared Test</h5>
                     <section class="h5_sec">
-                        <p></p>
+                        <p>
+                            Having solved the hyperparameter K we then ran a Chi Squared test. 
+                            The purpose of this test is to validate that our features are independant of eachother.
+                            SelectKBest will performed a Chi Squared test to identify feature independance.
+                            Following this the function will select the K best features for our dependant variable.
+                        </p>
                     </section>
 
+                    <!-- Handling MultiCollinearity -->
                     <h5>Handling MultiCollinearity</h5>
                     <section class="h5_sec">
-                        <p></p>
+                        <p>
+                            A few of these features are linear combinations of one another so we will remove these and in doing so will remove the multicollinearity.
+                            In addition we have some linear combinations within our records so we will fix those as well. 
+                            Finally our data has passed our assumptions and we are ready to build our model. 
+                        </p>
                     </section>
                 </section>
 
 
                 <!-- Analysis of Regression -->
-                <h3>OLS Time Effects Regression Model</h3>
+                <h3>Time Fixed Effects Regression Model</h3>
                 <section class="h3_sec">
+                    <p>
+                        Having selected "Total Theft" as our dependant variable we felt it the best to generally represent crime.
+                        The data for the model describes that of 59 cities spanning 20 years (divided into 4 intervals, every 5 year).
+                        Additionally there were 188 records for each of the seven features.
+                    </p>
                     <h5>Summarizing Results</h5>
                     <section class="h5_sec">
+                        
+                        <img class="text_img" src="image_files/regress_summary.png">
                         <p>
                             This model appears to be a good representation of the data. From this we can see that Population, Total_CashSecurities, Nonin_Trust_CashSec, Total_Expenditure, ect. all are largly statistically significant in identifying Total Theft 
                             Population and Total Expenditure seem to be accurate in describing Total Theft with low standard errors. This makes logical sense in that the more people in an area the more crime. Oth_Nonin_Fd_CashSec, Tot_Chgs_and_Misc_Rev and Nonin_TrustCashSec also have low std. errors.
                             Our final P-value appears to be statistically significant so lets use our test data to see how it performs with unseen data.
                         </p>
-                        
-                        <img class="text_img" src="image_files/regress_summary.png">
-                    
-                        <p></p>
 
                     </section>
                 
