@@ -175,22 +175,20 @@
                         These methods and functions are all stored within the support folder and have their own documentation. 
                     </p>
                     <p>
-                        For a deeper dive into the code view the <a href="https://github.com/Chief-Dom/Graduate-Data-Science-Final/tree/master/support" target="_blank" style="color: #3366cc;">support folder</a>, or view one of the specific files listed below.
+                        For a deeper dive into the code view the entire <a href="https://github.com/Chief-Dom/Graduate-Data-Science-Final/tree/master/support" target="_blank" style="color: #3366cc;">support folder</a>, 
+                        or specifically view one of folders three files listed below.
                     </p>
                     <ul class="list_unsorted">
-                        <h4>Support Files</h4>
+                        <h4>Contents of Support Folder</h4>
+
                         <li><a href="https://github.com/Chief-Dom/Graduate-Data-Science-Final/blob/master/support/load_data.py" target="_blank" style="color: #3366cc;">Load Data</a></li>
-                        <ul id="list_sub"> 
-                            <h4 id="list_sub_title">contained functions</h4>
-                            <li>Convert to Real Dollars</li>
-                            <li>Combine all Databases</li>
-                        </ul>
+                        <p id="list_item">Provides functions meant to quickly pull slices of the csv. Acting as a query the functions within this file can quickly return slices such as gps or employment data.</p>
+
                         <li><a href="https://github.com/Chief-Dom/Graduate-Data-Science-Final/blob/master/support/plotting_funcs.py" target="_blank" style="color: #3366cc;">Plotting & Graphing</a></li>
-                        <ul id="list_sub">
-                            <li>Heatmaps</li>
-                            <li>Distributions</li>
-                        </ul>
+                        <p id="list_item">During our exploratory analysis we created functions for plots (e.g. histograms, heatmaps, choropleths) so that they may be reused. </p>
+
                         <li><a href="https://github.com/Chief-Dom/Graduate-Data-Science-Final/blob/master/support/supporting_funcs.py" target="_blank" style="color: #3366cc;">Utilities</a></li>
+                        <p id="list_item">A vast range of functions meant for pre-processing, this file has capabilities such as normalization and converting monetary values from nominal to real dollars.</p>
                     </ul>
                 </section>
 
@@ -198,7 +196,13 @@
                 <!-- Data Exploration -->
                 <h3>Data Exploratory:</h3>
                 <section class="h3_sec">
-                    <p>This is a project presented to my partners and me by our client, The Idaho Policy Institute, In which they provided a dataset containing information on finances, population and crime for virtually every city and/or county in Idaho. The goal of the project was to find relationships between financial decisions with crime and employment trends in cities of Idaho with efferent sizes.</p>
+                    <p>
+                        Once we had a base understanding of the database it was time to get hands on with the data. 
+                        Quickly it became apparent that most of the described values were missing.
+                        With concerns of removing valuable insights, there were enough missing values that dropping rows, columns nor setting thresholds provided solutions.
+
+                        
+                    </p>
                     <img class="text_img" src="./image_files/data_densities.png">
                 </section>
 
