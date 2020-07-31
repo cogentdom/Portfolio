@@ -86,14 +86,19 @@
   }
   
   .textfield p {
-    /* margin-left: 30vw; */
     font-weight: lighter;
-    /* padding-right: 35vw; */
     padding-top: 1.5vh;
     padding-bottom: 3vh;
     font-size: normal;
     color: #e2e2e2;
-    /* font-weight: lighter; */
+  }
+
+  .textfield li {
+    font-weight: lighter;
+  }
+
+  #no_weight {
+    font-weight: normal;
   }
 
   ol {
@@ -127,7 +132,6 @@
   .list_unsorted li {
     padding-bottom: 0.5vh;
     padding-top: 1vh;
-    font-style: italic;
     /* text-decoration: underline; */
     margin-left: 2vw;
   }
