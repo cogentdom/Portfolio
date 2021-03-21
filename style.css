@@ -68,10 +68,11 @@
     display: grid;
     text-align: center;
     width: auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: right;
     white-space: nowrap;
     /* background: rgb(44, 54, 71, 0.7); */
+    padding-right: 2vw;
 
 }
 .navbar a {
