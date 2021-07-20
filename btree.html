@@ -63,9 +63,9 @@
             
             <section id="sec_small" class="h2_sec">
                 <p>
-                    This project will read the Human Genome by encoding the sequence. 
+                    This project reads the Human Genome by encoding the sequence. 
                     Sequenced using the 4 different organic chemicals, known as bases, the Human Genome is about 2.87 billion bases long. 
-                    Utilizing the B-tree data structure as a solution for memory constraints we will also be able to search the sequence with a O(log n) capability.
+                    Utilizing a B-tree data structure as a solution for the memory constraints by writing to disk we will also be able to search the sequence with a O(log n) capability.
                 </p>     
                 <p>View the <a href="https://github.com/the-chiefdom/Bioinformatics" target="_blank" style="color: #3366cc;">Project Repository</a> for a deeper dive into the code</p>
                 
@@ -100,70 +100,89 @@
                         
                     </p>
                     <img class="text_img" src="image_files/bioinfo.png">
-                    <h5>Project Pipeline</h5>
-                    <section class="h5_sec">
-                        
-
-                        <!-- Pipeline Flow -->
-                        <ul class="list_unsorted">
-                            <h4>Pipeline Flow</h4>
-                            <li style="font-weight: lighter;">Idaho</li>
-                            <ul id="list_sub">
-                                <li style="font-weight: lighter;">Comprehensive</li>
-                            </ul>
-                            <li style="font-weight: lighter;">The Census</li>
-                            <li style="font-weight: lighter;">Dollar</li>
-                            <li style="font-weight: lighter;">This</li>
-
-                            <ul id="list_sub">
-                                <li style="font-weight: lighter;">Basic</li>
-                                <li style="font-weight: lighter;">Self-reported</li>
-                                <li style="font-weight: lighter;">Overrepresentation</li>
-                                <li style="font-weight: lighter;">Lots of missings values.</li>
-                            </ul>
-                        </ul>
-                        <p></p>
-                    </section>
+                    
                 </section>
 
-                <!-- Data acquisition: -->
+                <!-- Input Files: -->
                 <h3>Input Files</h3>
                 <section class="h3_sec">
-                    <p></p>
+                    <p>
+                        The GeneBank files have a bunch of annotations followed by the keyword ORIGIN. 
+                        The DNA sequences start from the next line. 
+                        Each line has 60 characters (one of A, T, C, G, could be lower/upper case) until the end of sequence, which is denoted by // on a line by itself. 
+                        Sometimes you will see the character N, which denotes that the sequence is not known at that character. 
+                        You would skip these characters. 
+                        One GeneBank file may have several DNA sequences in it, each marked by ORIGIN and // tags.
+                        <br><br>
+                        When we reach a character N, we assume that the subsequence has ended. 
+                        Similarly, when we reach //, we also assume that the subsequence has ended. 
+                        So at those points, we reset the subsequence that we were building and start over when we find the next ORIGIN or the next valid character after seeing a N.
+                    </p>
                 </section>
 
-                <!-- Data management: -->
+                <!-- Problem: -->
                 <h3>Problem</h3>
                 <section class="h3_sec">
-                    <p></p>
+                    <p>
+                        For a given GeneBank file, we want to convert it into a BTree with each object being a DNA sequence of specified length k (where 1 ≤ k ≤ 31). 
+                        We will take the DNA sequence from the GeneBank file and break it into sequences of length k each. 
+                        We are interested in all subsequences with length k. 
+                        For example, in the sequence AATTCG, the subsequences of length three are: AAT, ATT, TTC and TCG. 
+                        Once we have a BTree for a length k, we want to be able to search for query sequences of length k. 
+                        The search returns the frequency of occurrence of the query string (which can be zero if it is not found).
+                        <br><br>
+                        The biological motivation behind is to study the frequency of different length subsequences to see if they are random or that some sequences are more likely to be found in the DNA.
+                    </p>
                 </section>
                 
-                <!-- Data cleaning: -->
+                <!-- Design Issues: -->
                 <h3>Design Issues</h3>
                 <section class="h3_sec">
-                    <p></p>
+                    <p>
+                        Saving memory. Since we only have four possible bases (A, C, G and T), we can optimize on space by converting our DNA strings to base 4 numbers. 
+                        Then we can represent each base by a 2-bit binary number.
+                        <br><br>
+                        Note that we have made the binary representations for complementary bases be binary complements as well. 
+                        With this compact representation, we can store a 31 length sequence in a 64-bit long primitive type in Java.
+                        <br><br>
+                        Key Values. Note that the binary compact representation of the subsequences will result in a unique 64-bit integer value. 
+                        Hence we can directly use that as our key value.
+                        <br><br>
+                        Class Design. We will need a BTree class as well as a BTreeNode class. 
+                        The objects that we store in the BTree will be similar to the objects we stored in the previous Hashtable assignment. 
+                        You may call the relevant class TreeObject to represent the objects.
+                    </p>
                 </section>
                 
-                <!-- Exploratory Data Analysis: -->
+                <!-- Implementation: -->
                 <h3>Implementation</h3>
                 <section class="h3_sec">
-                    <p></p>
-                </section>
-                
-                <!-- Feature Selection: -->
-                <h3>Debugging</h3>
-                <section class="h3_sec">
-                    <p></p>
-                </section>
-                
-                
-                <!-- Conclusion and Summary: -->
-                <h3>Conclusion and Summary</h3>
-                <section class="h3_sec">
-                    <p></p>
-                </section>
-                
-                
+                    <p>
+                        There are two seperate programs: one that creates a BTree from a given GeneBank file and another for searching in the specified BTree for sequences of given length. 
+                        The search program assumes that the user specified the proper BTree to use depending upon the query length.
+                        <br><br>
+                        There are two main Java classes named GeneBankCreateBTree and GeneBankSearch.
+                        <br>
+                        The required arguments for the two programs are shown below.
+                        <br><br>
+                        java GeneBankCreateBTree  &lt;0/1(no/with Cache)&gt; &lt;degree&gt; &lt;gbk file&gt; &lt;sequence length&gt;
+                            [&lt;cache size&gt;] [&lt;debug level&gt;]
+                        <br><br>
+                        java GeneBankSearch &lt;0/1(no/with Cache)&gt; &lt;btree file&gt; &lt;query file&gt; [&lt;cache size&gt;]
+                            [&lt;debug level&gt;]
+                        <br<br>
+                        The degree is the degree to be used for the BTree. 
+                        If the user specifies 0, then your program should choose the optimum degree based on a disk block size of 4096 bytes and the size of your BTree node on disk.
+                        <br><br>
+                        The sequence length is an integer that must be between 1 and 31 (inclusive). 
+                        The query file contains all the DNA strings of a specific sequence length that we want to search for in the specified btree file. 
+                        The strings are one per line and they all must have the same length as the DNA sequences in the btree file. 
+                        The DNA strings use a, c, t, and g (either lower or upper case).
+                        <br><br>
+                        The debug level is an optional argument with a default value of zero. 
+                        It must at least support the following levels for GeneBankCreateBTree:
+                    </p>
+                </section> 
             </section>   
             <p></p>
         </div> 
