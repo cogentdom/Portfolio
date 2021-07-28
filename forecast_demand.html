@@ -145,14 +145,31 @@
                 <h3>Data Cleaning</h3>
                 <section class="h3_sec">
                     <p>
-                        
+                        Make sure to perform a thorough EDA along with utilize the dashboard Kaggle provides on the competition's data tab, from here on I will assume there is a basic understanding of the dataset and it's structure. 
+                        <br><br>
+                        To kick things off we want to read the sales_train.csv file into a dataframe, let's call it 'train', which will allow for some interpretable manipulations.
+                        As I mentioned above Kaggle did not provide any null values within the sales_train dataset. 
+                        Essentially Kaggle did not provide a record for products with a zero sales count at any given shop. 
+                        These records are important to include because they have a value of zero rather than null. 
+                        By including these records in our data we now have the ability to predict the demand for any given product at any given shop, even when a shop has never offered said product. 
+                        <br><br>
+                        To achieve this grab all unique values for shop_id and item_id, storing them in their own list variables. 
+                        Now use those two variables to create a new list that is a permutation of shops and items where each element is a 2-tuple (shop_id, item_id); a list comprehension is the simplest approach. 
+                        Provide this list as the data to create a new dataframe, lets call it 'index'. 
+                        Next do a left merge with the index dataframe and the train dataframe (respectively).
+                        Finally take the new dataframe and fill all the null values with zero then write to a csv file as to avoid redundant computations. 
+                        <br><br>
+                        The approach is simple enough and only takes a few lines of code. 
+                        That being said as we progress and things become increasingly complex feel free to reference the repository linked above, each notebook will be associated to a section header. 
                     </p>
                 </section>
                 
                 <!-- Exploratory Data Analysis: -->
                 <h3>Preprocessing</h3>
                 <section class="h3_sec">
-                    <p></p>
+                    <p>
+
+                    </p>
                 </section>
                 
                 <!-- Feature Selection: -->
