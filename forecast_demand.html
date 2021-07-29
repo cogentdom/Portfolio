@@ -164,30 +164,29 @@
                     </p>
                 </section>
                 
-                <!-- Exploratory Data Analysis: -->
-                <h3>Preprocessing</h3>
+                <!-- Preprocessing & Modeling: -->
+                <h3>Preprocessing & Modeling</h3>
                 <section class="h3_sec">
                     <p>
-
+                        Starting with a new notebook read in the CSV created in the previous section. 
+                        First we will need to shape the dataframe using a pivot table where shop_id and item_id are  your indecies, date_block_num is the column and aggregate item_cnt_day into item_cnt_month with a fill value of 0. 
+                        The seasonality is a 3 month period for products in the aggregate so to achieve stationarity convert each sequence into it's rolling mean with a 3 month window. 
+                        Next for preprocessing standardize the data using StandardScaler() then reshape the scaled data to be (214200, 33, 1) for X_train and (214200, 1) for y_train. 
+                        The y_train data should be the last value available in your sequence.
+                        <br><br>
+                        For the model use the sequencial library in keras and add an LSTM layer with a (33, 1) input shape and a relu activation. 
+                        Add three more layers first using leaky_relu then a dropout of 0.3 and last a dense layer of 1. 
+                        Compile this model with a mean_squared_error loss function and an Adam optimizer. 
+                        Fit the model with a 214200 batch size and 3 epochs to hit the bottom of the elbow, in the notebook I fit to 5 and saved a plot so you'll be ale to see that 3 epochs is optimal.  
                     </p>
-                </section>
-                
-                <!-- Feature Selection: -->
-                <h3>Feature Selection</h3>
-                <section class="h3_sec">
-                    <p></p>
-                </section>
-                
-                <!-- Modeling: -->
-                <h3>Modeling</h3>
-                <section class="h3_sec">
-                    <p></p>
                 </section>
                 
                 <!-- Evaluation: -->
                 <h3>Evaluation</h3>
                 <section class="h3_sec">
-                    <p></p>
+                    <p>
+                        
+                    </p>
                 </section>
                 
                 <!-- Communicating Findings: -->
