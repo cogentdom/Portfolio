@@ -185,7 +185,11 @@
                 <h3>Evaluation</h3>
                 <section class="h3_sec">
                     <p>
-                        
+                        Once the model is trained you'll want to inverse the transformation from the standardization function and then inverse the rolling mean. 
+                        Evaluate the predictions of your y_hat data compared to y_actual, the competition uses root mean squared error but feel free to use whatever you want. 
+                        Once you are done tuning and satisfied with your hyperparameters train on the complete data and predict for the 34th date block number.  
+                        Take your predictions and clip them between 0 and 20 and save them as a CSV following the competitions desired format; submit these predictions on Kaggle. 
+                        Congratulations, your have now built a deep learning model to forecast demand and will be ranked in the top half of the competition.  
                     </p>
                 </section>
                 
@@ -194,7 +198,13 @@
                 <!-- Conclusion and Summary: -->
                 <h3>Conclusion and Summary</h3>
                 <section class="h3_sec">
-                    <p></p>
+                    <p>
+                        Having followed the steps provided you will now be on your way with an initial design to be a real competator within this Kaggle competition. 
+                        Furthermore you now have an understanding of an LSTM and its usefulness as a specialized RNN meant for forecasting sequential data. 
+                        To advance your predictions even more feel free to use autoencoding potentially using tensorflows timeseriesgenerator. 
+                        Another step would be to utilize some of the other files provided and do some feature engineering or better improve the layered design of your neural network. 
+                        I believe this project has some real world uses esspecially in the reahlm of supply chain so I am glad to have opened this project and I hope you found it useful as a guide.
+                    </p>
                 </section>
                 
                 
