@@ -26,7 +26,7 @@
   background-image: url('image_files/foggy_forest.jpg');
   background-size: cover;
   color: #ffffff;
-  height: 100vh;
+  height: auto;
   
   /* Trial to fix mobile image resizing */
 /*    padding-top: 10vh;    
@@ -58,10 +58,10 @@
 }
 
 @media only screen and (max-width: 10in) {
-  .headerArt {
+  /* .headerArt {
     height: 100vw;
     background-size: auto 100vw;
-  }
+  } */
   .headerArt h1 {
     margin-left: 7vw;
   }
@@ -73,10 +73,10 @@
 }
 
  @media only screen and (max-width: 4in) {
-  .headerArt {
+  /* .headerArt {
     height: 160vw;
     background-size: auto 160vw;
-  }
+  } */
    .headerArt h1 {
     font-size: 300%;
     margin-left: 7vw;
