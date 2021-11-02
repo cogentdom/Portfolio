@@ -60,6 +60,7 @@
 @media only screen and (max-width: 10in) {
   .headerArt {
     height: 60vh;
+    background-size: auto;
   }
 
 }
@@ -67,6 +68,7 @@
  @media only screen and (max-width: 6in) {
   .headerArt {
     height: 60vh;
+    background-size: auto;
   }
    .headerArt h1 {
     font-size: 300%;
