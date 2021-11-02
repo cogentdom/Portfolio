@@ -17,14 +17,14 @@
     top: 1vh;
     text-align: left;
     margin-left: 5vw;
-    margin-top: 7vh;
+    margin-top: 5vw;
     float: left;
     /* border: 0.3vh groove #453d0c; */
     border: 0.3vh groove #696868; 
     
-    border-radius: 1vh;
-    padding-top: 2vh;
-    padding-bottom: 1vh;
+    border-radius: 1vw;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
     padding-left: 0.5vw;
 }
 
@@ -37,7 +37,7 @@
 
 #icons .row {
     display: flex;
-    margin-bottom: 1vh;
+    margin-bottom: 1vw;
     width: auto;
     height: 3vh;
     align-items: center; 
@@ -45,7 +45,7 @@
     margin-right: 0.5vw;
     /* background: rgb(22, 33, 51); */
     background: #252a34;
-    border-radius: 1vh;
+    border-radius: 1vw;
     /* border: 0.3vh groove #453d0c;  /* Red */
    /* border: 0.3vh groove #999898;    */
     border: 0.4vh groove #696868; 
@@ -123,8 +123,8 @@
         float: right;
         text-align: right;
         width: 35vw;
-        margin-top: 6vh;
-        margin-right: 1vh;
+        /* margin-top: 6vh; */
+        margin-right: 1vw;
         display: block;
         
         -webkit-transform: rotate(-180deg);
@@ -167,6 +167,6 @@
         -o-transform: scale(-1, 1);
         -ms-transform: scale(-1, 1);
         transform: scale(-1, 1);
-        margin-top: 2vh;
+        margin-top: 2vw;
     }
 }
