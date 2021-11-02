@@ -75,7 +75,8 @@
 
  @media only screen and (max-width: 4in) {
   .headerArt {
-    height: 160vw;
+    height: 130vw;
+    width: 100vw;
   }
    .headerArt h1 {
     font-size: 300%;
