@@ -17,8 +17,9 @@
  .header {
     display: flex;
     align-items: center;
-    height: 10vh;
+    height: auto;
 
+    padding-top: 1.5vh;
     padding-bottom: 1.5vh;
     background-color: rgb(29, 36, 49);
     /* background: #304b24; */
@@ -178,9 +179,9 @@
 }
 
 @media only screen and (max-width: 10in) {
-  .header {
-    height: 15vh;
-  }
+  /* .header {
+    height: 70px;
+  } */
   #header_title {
     margin-left: 5vw;
   }
@@ -234,7 +235,7 @@
   }
   .header {
     grid-template-columns: 45% 1% 1fr;
-    height: 18vh;
+    /* height: auto; */
   }
   #sec_small {
     width: 55vw;

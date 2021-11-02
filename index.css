@@ -60,7 +60,7 @@
 
 @media only screen and (max-width: 10in) {
   .headerArt {
-    height: 70vh;
+    height: 100vw;
     /* width: 100vw; */
     
   } 
@@ -76,11 +76,11 @@
 }
 
  @media only screen and (max-width: 4in) {
-  /* .headerArt {
+  .headerArt {
     height: 130vw;
-    width: 100vw;
+    /* width: 100vw; */
   }
-   .headerArt h1 {
+  /* .headerArt h1 {
     font-size: 300%;
     margin-left: 7vw;
     
