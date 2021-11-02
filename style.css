@@ -208,6 +208,8 @@
     padding-right: 1vh;
   }
   .header {
+    padding-top: 3vh;
+    padding-bottom: 3.5vh;
     grid-template-columns: 45% 1fr 1fr;
   }
   .h2_sec {
@@ -233,10 +235,10 @@
     font-size: larger;
     
   }
-  .header {
+  /* .header {
     grid-template-columns: 45% 1% 1fr;
-    /* height: auto; */
-  }
+    height: auto;
+  } */
   #sec_small {
     width: 55vw;
     margin-right: 1vw;
