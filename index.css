@@ -53,9 +53,9 @@
 }
 
 @media only screen and (max-width: 10in) {
-  .headerArt p {
-   /* margin-top: 2vh; */
-  }
+  /* .headerArt p {
+   margin-top: 2vh;
+  } */
 
 }
 
