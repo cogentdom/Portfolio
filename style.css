@@ -228,6 +228,7 @@
   }
   .header {
     grid-template-columns: 45% 1fr 1fr;
+    background-color: rgb(29, 36, 49);
   }
   #sec_small {
     width: 55vw;
