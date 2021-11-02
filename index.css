@@ -25,8 +25,9 @@
   /*text-align: left;*/
   background-image: url('image_files/foggy_forest.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   color: #ffffff;
-  height: auto;
+  height: 100vh;
   
   /* Trial to fix mobile image resizing */
 /*    padding-top: 10vh;    
@@ -59,36 +60,37 @@
 
 @media only screen and (max-width: 10in) {
   .headerArt {
-    height: 100vw;
-    width: 100vw;
-    /* background-size: auto 100vw; */
-  }
+    height: 70vh;
+    /* width: 100vw; */
+    
+  } 
   .headerArt h1 {
     margin-left: 7vw;
+    font-size: 300%;
   }
   .headerArt p {
     margin-left: 20vw;
-    
-  }
+    font-size: 130%;
+  } 
 
 }
 
  @media only screen and (max-width: 4in) {
-  .headerArt {
+  /* .headerArt {
     height: 130vw;
     width: 100vw;
   }
    .headerArt h1 {
     font-size: 300%;
     margin-left: 7vw;
-    /* margin-bottom: 2vh; */
+    
   }
   .headerArt p {
     font-size: 130%;
     margin-left: 20vw;
     
-  }
- }
+  }*/
+ } 
 
 
 .body {

@@ -234,6 +234,7 @@
   }
   .header {
     grid-template-columns: 45% 1% 1fr;
+    height: 18vh;
   }
   #sec_small {
     width: 55vw;
