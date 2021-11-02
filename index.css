@@ -59,15 +59,22 @@
 
 @media only screen and (max-width: 10in) {
   .headerArt {
-    height: 80vh;
+    height: 100vw;
     /* background-size: cover; */
+  }
+  .headerArt h1 {
+    margin-left: 7vw;
+  }
+  .headerArt p {
+    margin-left: 20vw;
+    
   }
 
 }
 
- @media only screen and (max-width: 6in) {
+ @media only screen and (max-width: 4in) {
   .headerArt {
-    height: 80vh;
+    height: 160vw;
     /* background-size: auto; */
   }
    .headerArt h1 {
@@ -77,10 +84,11 @@
   }
   .headerArt p {
     font-size: 130%;
-    margin-left: 18vw;
+    margin-left: 20vw;
     
   }
  }
+
 
 .body {
   display: inline;

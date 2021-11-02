@@ -196,13 +196,18 @@
     font-size: x-large;
     
   }
+  .navbar {
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .navbar a {
     font-size: large;
     padding-left: 1vh;
     padding-right: 1vh;
   }
   .header {
-    grid-template-columns: 50% 10% 1fr;
+    grid-template-columns: 45% 1fr 1fr;
   }
   .h2_sec {
     width: 63vw; 
@@ -228,7 +233,7 @@
     
   }
   .header {
-    grid-template-columns: 45% 1fr 1fr;
+    grid-template-columns: 45% 1% 1fr;
   }
   #sec_small {
     width: 55vw;
