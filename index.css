@@ -28,8 +28,9 @@
   color: #ffffff;
   height: 100vh;
   
-  padding-top: 10vh; /** Trial to fix mobile image resizing  **/
-  padding-bottom: 10vh; /** Trial to fix mobile image resizing  **/
+  /* Trial to fix mobile image resizing */
+/*    padding-top: 10vh;    
+      padding-bottom: 10vh;  Trial to fix mobile image resizing   */
 
   display: grid;
   grid-template-rows: 11fr 1.5fr 0.7fr 12fr;
@@ -57,13 +58,16 @@
 }
 
 @media only screen and (max-width: 10in) {
-  /* .headerArt p {
-   margin-top: 2vh;
-  } */
+  .headerArt {
+    height: 60vh;
+  }
 
 }
 
  @media only screen and (max-width: 6in) {
+  .headerArt {
+    height: 60vh;
+  }
    .headerArt h1 {
     font-size: 300%;
     margin-left: 7vw;
