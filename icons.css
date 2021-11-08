@@ -48,7 +48,7 @@
         width: 35vw;
         /* margin-top: 6vh; */
         margin-right: 1vw;
-        display: block;
+        /* display: block; */
         
         -webkit-transform: rotate(-180deg);
         transform: rotate(-180deg);
@@ -59,7 +59,7 @@
         -ms-transform: scale(-1, 1);
         transform: scale(-1, 1);
 
-        position: sticky;
+        /* position: sticky; */
     }
 }
 
