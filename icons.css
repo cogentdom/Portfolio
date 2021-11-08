@@ -33,7 +33,33 @@
     width: 19vw;
     }
 }
+@media only screen and (max-width: 10in) {
+    #icons {
+        margin-left: 0.5vw;
+        width: 29vw;
+        left: 0.5vw;
+    }
+}
+@media only screen and (max-width: 6in) {
+    #icons {
+        opacity: 0.8;
+        float: right;
+        text-align: right;
+        width: 35vw;
+        /* margin-top: 6vh; */
+        margin-right: 1vw;
+        display: block;
+        
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
 
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+    }
+}
 
 #icons .row {
     display: flex;
@@ -51,12 +77,27 @@
     border: 0.4vh groove #696868; 
 
 }
-
+@media only screen and (max-width: 6in) {
+    .row {
+        text-align: right;
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+    }
+}
 
 #icons h4 {
     display: flex;
     font-weight: 300;
     font-size: medium;
+}
+@media only screen and (max-width: 6in) {
+    #icons h4 {
+        font-size: small;
+        white-space: nowrap;
+    }
 }
 
   #icons p {
@@ -65,6 +106,19 @@
     justify-content: center;
     align-items: center; 
     padding: 0.5vw;
+}
+@media only screen and (max-width: 6in) {
+    #icons p {
+        white-space: nowrap;
+        font-size: medium;
+        text-align: right;
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+        margin-top: 2vw;
+    }
 }
 
   #icons a {
@@ -75,6 +129,11 @@
     width: auto;
     transition: all 0.3s ease;
     align-items: center; 
+}
+@media only screen and (max-width: 6in) {
+    #icons a {
+        display: inline-flex;
+    }
 }
 
 #icons a:hover {
@@ -108,65 +167,13 @@
     background: transparent;
 }
 
-@media only screen and (max-width: 10in) {
-    #icons {
-        margin-left: 0.5vw;
-        width: 29vw;
-        left: 0.5vw;
-    }
-    
-}
 
 @media only screen and (max-width: 6in) {
-    #icons {
-        opacity: 0.8;
-        float: right;
-        text-align: right;
-        width: 35vw;
-        /* margin-top: 6vh; */
-        margin-right: 1vw;
-        display: block;
-        
-        -webkit-transform: rotate(-180deg);
-        transform: rotate(-180deg);
-
-        -moz-transform: scale(-1, 1);
-        -webkit-transform: scale(-1, 1);
-        -o-transform: scale(-1, 1);
-        -ms-transform: scale(-1, 1);
-        transform: scale(-1, 1);
-    }
-    .row {
-        text-align: right;
-        -moz-transform: scale(-1, 1);
-        -webkit-transform: scale(-1, 1);
-        -o-transform: scale(-1, 1);
-        -ms-transform: scale(-1, 1);
-        transform: scale(-1, 1);
-    }
-    #icons h4 {
-        font-size: small;
-        white-space: nowrap;
-    }
-    #icons a {
-        display: inline-flex;
-    }
     #icons img {
         -moz-transform: scale(-1, 1);
         -webkit-transform: scale(-1, 1);
         -o-transform: scale(-1, 1);
         -ms-transform: scale(-1, 1);
         transform: scale(-1, 1);
-    }
-    #icons p {
-        white-space: nowrap;
-        font-size: medium;
-        text-align: right;
-        -moz-transform: scale(-1, 1);
-        -webkit-transform: scale(-1, 1);
-        -o-transform: scale(-1, 1);
-        -ms-transform: scale(-1, 1);
-        transform: scale(-1, 1);
-        margin-top: 2vw;
     }
 }
