@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6e791790-ea4f-42f5-9f3c-136f4c18180c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook_one.html" beforeDir="false" afterPath="$PROJECT_DIR$/notebook_one.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681340716822</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Made notebook file">
+      <created>1681343422401</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681343422401</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +129,7 @@
     <MESSAGE value="Fixed about" />
     <MESSAGE value="Fixed landing page description" />
     <MESSAGE value="Added graph to about" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added graph to about" />
+    <MESSAGE value="Made notebook file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made notebook file" />
   </component>
 </project>
