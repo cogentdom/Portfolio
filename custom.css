@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* color: #304b24; */
+    /* background: #304b24; */
+    /* color: #eaeaea; */
+    /* background-color: #252a34; */
+    /* background-color: red; */
+    /* background: rgb(44, 54, 71, 0.7); */
+
+}
+
+/*
+***************************************************
+*       HEADER
+***************************************************
+*/
+ .header {
+    display: flex;
+    align-items: center;
+    height: auto;
+
+    padding-top: 3vh;
+    padding-bottom: 1.5vh;
+    background-color: rgb(29, 36, 49);
+    /* background: #304b24; */
+    display: grid;
+    grid-template-columns: 60% 1fr 1fr;
+    /* border-bottom: 0.3vh groove #453d0c; */
+    width: 100vw;
+    margin-left: -2vw;
+    margin-top: -2vh;
+}
+
+/*
+ *************
+ * Title Bar
+ *************
+*/
+.title {
+  text-align: left;
+  display: inline-flex;
+  /* align-items: ; */
+  /* white-space: pre-wrap; */
+  color: #eaeaea;
+
+}
+
+.title h1 {
+  margin: 0;
+  /* border: 0.1vw solid black;
+  width:fit-content;
+  width:-webkit-fit-content;
+  width:-moz-fit-content; */
+  padding: 0.2vw;
+  /* left: 1vw; */
+  margin-left: 5vw;
+  white-space: nowrap;
+
+}
+
+#header_title {
+  /* opacity: 0.7; */
+  margin: 0;
+  white-space: nowrap;
+
+}
+
+/*
+ *************
+ * Page Navigation Bar
+ *************
+*/
+.navbar {
+    /* height: 100%; */
+    display: grid;
+    text-align: center;
+    width: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: right;
+    white-space: nowrap;
+    /* background: rgb(44, 54, 71, 0.7); */
+    padding-right: 2vw;
+    color: #eaeaea;
+}
+.navbar a {
+  /* padding-right: 0.5vw;
+  padding-left: 0.5vw; */
+  padding: 0.5vw;
+  /* border: 0.3vh groove #999898; */
+  border: 0.4vh groove #304b24;
+  border-radius: 25px;
+  /* background-color: #453d0c6c; */
+  /* background-color: rgb(29, 36, 49); */
+  /* background: #252a34; */
+  background: rgb(44, 54, 71, 0.7);
+  filter: brightness(0.95);
+  /* backface-visibility: 0.5; */
+  margin: 0.5vh  0.5vw ;
+  color: #eaeaea;
+}
+
+.navbar a:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+
+  -webkit-transition: transform 200ms linear;
+  -moz-transition: transform 200ms linear;
+  -o-transition: transform 200ms linear;
+  -ms-transition: transform 200ms linear;
+  transition: transform 200ms linear;
+  transition-delay:0.1s;
+}
+/* .a {background-color: aliceblue}
+.b {background-color: bisque} */
+
+
+
+@media only screen and (max-width: 10in) {
+  /* .header {
+    height: 70px;
+  } */
+  #header_title {
+    margin-left: 5vw;
+  }
+  .title {
+    display: inline-block;
+    /* grid-template-rows: 1fr 1fr; */
+    padding: 0;
+  }
+  .title h1{
+    left: 0.5vw;
+    /* margin-left: 0.5vw; */
+    padding: 0;
+    font-size: x-large;
+
+  }
+  .navbar {
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .navbar a {
+    font-size: large;
+    padding-left: 1vh;
+    padding-right: 1vh;
+  }
+  .header {
+    padding-top: 3vh;
+    padding-bottom: 3.5vh;
+    grid-template-columns: 45% 1fr 1fr;
+  }
+  .h2_sec {
+    width: 63vw;
+  }
+  .h3_sec {
+    width: 63vw;
+  }
+  .h5_sec {
+    width: 61vw;
+  }
+}
+
+@media only screen and (max-width: 6in) {
+  /* .title {
+    font-size: x-small;
+  } */
+  .title h1 {
+    /* white-space: pre-wrap; */
+    font-size: x-large;
+  }
+  #header_title {
+    font-size: larger;
+
+  }
+  /* .header {
+    grid-template-columns: 45% 1% 1fr;
+    height: auto;
+  } */
+  #sec_small {
+    width: 55vw;
+    margin-right: 1vw;
+  }
+
+  #h2_small {
+    width: 57vw;
+    padding-right: 1vw;
+  }
+  .h2_sec {
+    margin-left: 2vw;
+    width: 83vw;
+    padding-left: 2vw;
+  }
+  .h3_sec {
+    width: 82.6vw;
+    padding-left: 2vw;
+  }
+  .h5_sec {
+    width: 81vw;
+    padding-left: 2vw;
+  }
+
+  .navbar {
+    padding-right: 4vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+  }
+  .navbar a {
+    /* border: 0.4vh groove #999898; */
+    font-size: large;
+  }
+/* .h3_sec {
+  width: 63vw;
+}
+.h5_sec {
+  width: 61vw;
+} */
+}
+/*
+***************************************************
+*       FOOTER
+***************************************************
+*/
+  footer {
+    margin-left: -2vw;
+    padding-bottom: 1vh;
+    width: 100vw;
+    height: 6vh;
+    background-color: #252a34;
+    align-items: center;
+    /* border-top: 0.3vh groove #453d0c;  Tan */
+    border-top: 0.4vh groove #999898;
+    color: #eaeaea;
+}
+
+footer p {
+    margin-left: 10%
+}
